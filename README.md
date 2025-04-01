@@ -60,6 +60,26 @@ SPRINT 1:
 ![image](https://github.com/user-attachments/assets/ea9d2ae4-0d33-434f-a872-d0ffbade9ddc)
 ![image](https://github.com/user-attachments/assets/c7f73674-bc97-4d7b-9074-3d9117763fd7)
 
+## 📚 Sketches e Storyboards
 
-### Protótipos Lo-Fi (Figma)
+### História 1: Autenticação e Definição de Perfil
 - (Em desenvolvimento...)
+
+### História 2: Visualização de Dashboard
+- (Em desenvolvimento...)
+
+### História 3: Consulta de Equipamento
+- (Em desenvolvimento...)
+
+### História 4: Abertura de Ordem de Serviço
+- (Em desenvolvimento...)
+
+### História 5: Fechamento de Ordem de Serviço com Relatório
+- (Em desenvolvimento...)
+
+## 🎥 Screencast do Protótipo
+
+Assista ao screencast do protótipo para entender o fluxo de interação e funcionalidades principais.
+- (Em desenvolvimento...)
+[![Screencast do Protótipo](link_para_imagem_thumb)](link_para_video)
+
