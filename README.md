@@ -7,7 +7,7 @@
 - Pamela Teixeira Rodrigues
 
 ## 📝 Descrição do Projeto
-O Projeto SAGE é uma solução voltada para a gestão eficiente de ordens de serviço e manutenção de equipamentos clínicos em um ambiente hospitalar. O sistema fornece autenticação segura, gerenciamento de dashboard, monitoramento de equipamentos, controle de manutenção, gestão de contratos, e muito mais.
+O Projeto SAGE (Sistema de Acompanhamento e Gerenciamento de Equipamentos) é uma solução voltada para a gestão eficiente de ordens de serviço e manutenção de equipamentos clínicos em um ambiente hospitalar. O sistema fornece autenticação segura, gerenciamento de dashboard, monitoramento de equipamentos, controle de manutenção, gestão de contratos, e muito mais.
 
 ## 🔧 Funcionalidades
 1. **Autenticação e Gestão de Acessos**
