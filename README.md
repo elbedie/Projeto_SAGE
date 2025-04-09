@@ -282,11 +282,11 @@ Acompanhe nosso progresso diretamente nas ferramentas de gestão de projetos:
 ## 📚 Sketches e Storyboards  
 Acompanhe o desenvolvimento do projeto com os sketches e storyboards das funcionalidades em andamento:
 
-- **História 1**: Autenticação e Definição de Perfil [Link do Screencast](#) (MINUTAGEM: XX:XX - XX:XX)  
-- **História 2**: Visualização de Dashboard [Link do Screencast](#) (MINUTAGEM: XX:XX - XX:XX)  
-- **História 4**: Abertura de Ordem de Serviço [Link do Screencast](#) (MINUTAGEM: XX:XX - XX:XX)    
-- **História 5**: Fechamento de Ordem de Serviço com Relatório (Em desenvolvimento…)
-- **História 6**: Controle de Contratos [Link do Screencast](#) (MINUTAGEM: XX:XX - XX:XX)
+- **História 1**: Autenticação e Definição de Perfil [Figma](https://www.figma.com/proto/fNpzjR1EqV8dfAkAnqauC4/SAGE?node-id=16-283&p=f&t=MnvjLIMUqd6eujuW-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1) [Link do Screencast](#) (MINUTAGEM: XX:XX - XX:XX)  
+- **História 2**: Visualização de Dashboard [Figma](https://www.figma.com/proto/fNpzjR1EqV8dfAkAnqauC4/SAGE?node-id=16-283&p=f&t=MnvjLIMUqd6eujuW-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1) [Link do Screencast](#) (MINUTAGEM: XX:XX - XX:XX)  
+- **História 4**: Abertura de Ordem de Serviço [Figma](https://www.figma.com/proto/fNpzjR1EqV8dfAkAnqauC4/SAGE?node-id=16-283&p=f&t=MnvjLIMUqd6eujuW-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1) [Link do Screencast](#) (MINUTAGEM: XX:XX - XX:XX)    
+- **História 5**: Fechamento de Ordem de Serviço com Relatório [Figma](https://www.figma.com/proto/fNpzjR1EqV8dfAkAnqauC4/SAGE?node-id=16-283&p=f&t=MnvjLIMUqd6eujuW-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1) [Link do Screencast](#) (MINUTAGEM: XX:XX - XX:XX)
+- **História 6**: Controle de Contratos  [Figma](https://www.figma.com/proto/fNpzjR1EqV8dfAkAnqauC4/SAGE?node-id=16-283&p=f&t=MnvjLIMUqd6eujuW-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1) [Link do Screencast](#) (MINUTAGEM: XX:XX - XX:XX)
 
 ## 🎥 Screencast do Protótipo  
 Assista ao vídeo do protótipo para ver como o sistema funciona e entender como ele pode beneficiar a gestão de equipamentos hospitalares:
