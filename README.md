@@ -276,7 +276,8 @@ Para uma visão mais imersiva do projeto, confira nossos protótipos e veja como
 Acompanhe nosso progresso diretamente nas ferramentas de gestão de projetos:
 
 - **Quadro e Backlog (Trello)**  
-  - **Sprint 1**: ![Imagem do Sprint 1](#)
+  - **Sprint 1**:
+  ![backlog](https://github.com/user-attachments/assets/2a748d86-6a82-4d64-989b-53a576fe3ef8)
 
 ## 📚 Sketches e Storyboards  
 Acompanhe o desenvolvimento do projeto com os sketches e storyboards das funcionalidades em andamento:
