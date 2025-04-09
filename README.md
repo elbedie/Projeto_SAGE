@@ -65,6 +65,7 @@ Como usuário do sistema, quero fazer login de forma segura e escolher meu perfi
 - 
 **Time Stamp:** 00:52-01:06  
 **Figma Time Stamp:** 02:48-03:38
+  
 **Implementação no protótipo:**
 ![image](https://github.com/user-attachments/assets/97d60a62-5d38-4bce-9f1c-30e13ffabd94)
 
@@ -87,6 +88,7 @@ Como gestor hospitalar, quero ver um painel de controle com status dos equipamen
 
 **Time Stamp:** 01:06-01:15  
 **Figma Time Stamp:** 03:38-04:16; 04:47-05:50; 06:18-06:48
+
 **Implementação no protótipo:**
 ![image](https://github.com/user-attachments/assets/0d4e5bf6-8137-47f0-94e6-a58c182367e3)
 ![image](https://github.com/user-attachments/assets/363e0d90-8e49-40a6-b8c6-050b4cd0203e)
@@ -130,6 +132,7 @@ Como técnico de manutenção, quero abrir uma O.S. rapidamente, para garantir q
 
 **Time Stamp:**  01:23-01:30  
 **Figma Time Stamp:** 04:16-04:46; 06:48-07:48
+
 **Implementação no protótipo:**
 ![image](https://github.com/user-attachments/assets/bc4c5267-3046-4ce4-9c66-3bf91961e82a)
 ![image](https://github.com/user-attachments/assets/544e939c-1ba4-4dcd-ad8a-5984a27a3494)
@@ -153,6 +156,7 @@ Como técnico de manutenção, quero registrar detalhes da O.S. ao encerrá-la, 
 
 **Time Stamp:**  01:30-01:38  
 **Figma Time Stamp:** 07:48-08:35
+
 **Implementação no protótipo:**
 ![image](https://github.com/user-attachments/assets/130016b9-d43e-438f-8dd9-d730f8a31b4e)
 
@@ -175,6 +179,7 @@ Como gestor hospitalar, quero monitorar contratos com fornecedores, para garanti
 
 **Time Stamp:**  01:38-01:46  
 **Figma Time Stamp:** 05:50-06:17
+
 **Implementação no protótipo:**
 ![image](https://github.com/user-attachments/assets/c66db552-bb0a-4b94-af8e-4729e3b53d7b)
 
