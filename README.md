@@ -1,5 +1,5 @@
 # ⚕️ Projeto SAGE
-Sistema de Acompanhamento e Gerenciamento de Equipamentos
+Sistema de Acompanhamento e Gerenciamento de Equipamentos Hospitalares
 
 ## 🤝 Nossa Equipe
 Somos um time apaixonado por tecnologia e inovação, trazendo expertise para transformar a gestão de equipamentos hospitalares. Nossa equipe é formada por quatro estudantes dedicados, cursando Análise e Desenvolvimento de Sistemas na renomada faculdade CESAR School, são eles:
@@ -48,7 +48,7 @@ Utilizamos a metodologia MoSCoW para priorizar as funcionalidades de **SAGE**, g
 ## 🧑‍💻 Histórias de Usuário 
 [Screencast](https://drive.google.com/file/d/1foDUKuqZTrG89-B_wx9Gv1R1nwtUj-_m/view?usp=drive_link)
 
-### 1. **Autenticação e Definição de Perfil**  
+- ### 1. **Autenticação e Definição de Perfil**  
 **Conversa com o P.O:**  
 **Desenvolvedor:**  
 Oi, PO! Para a história "Autenticação e Definição de Perfil", temos um requisito claro de login e senha. Para a recuperação de senha, qual fluxo você imagina? O usuário vai receber um link por e-mail para resetar a senha ou ele vai responder a perguntas de segurança?  
@@ -71,7 +71,7 @@ Como usuário do sistema, quero fazer login de forma segura e escolher meu perfi
 
 ---
 
-### 2. **Visualização de Dashboard**  
+- ### 2. **Visualização de Dashboard**  
 **Conversa com o P.O:**  
 **Desenvolvedor:**  
 PO, sobre o painel do gestor, o que você imagina quando fala sobre indicadores visuais de criticidade? Você tem algum modelo ou exemplo de visualização?  
@@ -96,7 +96,7 @@ Como gestor hospitalar, quero ver um painel de controle com status dos equipamen
 
 ---
 
-### 3. **Consulta de Equipamento**  
+- ### 3. **Consulta de Equipamento**  
 **Conversa com o P.O:**  
 **Desenvolvedor:**  
 Para a consulta de equipamentos, a busca pode ser feita pelo nome, código ou categoria, mas em relação ao histórico de manutenção, você quer ver também o que foi feito nos últimos meses ou o histórico completo?  
@@ -115,7 +115,7 @@ Como técnico de manutenção, quero consultar um equipamento pelo código ou no
 
 ---
 
-### 4. **Abertura de Ordem de Serviço (O.S.)**  
+- ### 4. **Abertura de Ordem de Serviço (O.S.)**  
 **Conversa com o P.O:**  
 **Desenvolvedor:**  
 Para abrir uma O.S., o técnico deve selecionar o equipamento e relatar o problema. Quando falamos sobre a prioridade, você acha que a opção de "Baixa, Média e Alta" é suficiente ou devemos adicionar alguma outra prioridade, como "Urgente"?  
@@ -139,7 +139,7 @@ Como técnico de manutenção, quero abrir uma O.S. rapidamente, para garantir q
 
 ---
 
-### 5. **Fechamento de Ordem de Serviço com Relatório**  
+- ### 5. **Fechamento de Ordem de Serviço com Relatório**  
 **Conversa com o P.O:**  
 **Desenvolvedor:**  
 Ao fechar uma O.S., você mencionou que o técnico pode adicionar descrição da manutenção. Devemos também permitir que o técnico adicione fotos do que foi feito ou da peça substituída?  
@@ -162,7 +162,7 @@ Como técnico de manutenção, quero registrar detalhes da O.S. ao encerrá-la, 
 
 ---
 
-### 6. **Controle de Contratos**  
+- ### 6. **Controle de Contratos**  
 **Conversa com o P.O:**  
 **Desenvolvedor:**  
 Quando falamos sobre monitoramento de contratos, você imagina que o sistema deve enviar alertas para os contratos próximos do vencimento, mas com que antecedência você gostaria desses alertas? Uma semana? 30 dias?  
@@ -185,7 +185,7 @@ Como gestor hospitalar, quero monitorar contratos com fornecedores, para garanti
 
 ---
 
-### 7. **Alertas Automáticos de Manutenção**  
+- ### 7. **Alertas Automáticos de Manutenção**  
 **Conversa com o P.O:**  
 **Desenvolvedor:**  
 Em relação aos alertas de manutenção, você gostaria de configurar o tipo de notificação (e-mail, SMS, ou dentro do sistema)? E sobre a falha recorrente, seria interessante que o sistema enviasse uma notificação automaticamente quando detectar o mesmo erro mais de uma vez em um curto período?  
@@ -204,7 +204,7 @@ Como administrador da clínica, quero receber alertas sobre manutenções progra
 
 ---
 
-### 8. **Geração de Relatórios Personalizados**  
+- ### 8. **Geração de Relatórios Personalizados**  
 **Conversa com o P.O:**  
 **Desenvolvedor:**  
 Na geração de relatórios, além de tempo médio de resposta e custo de manutenção, você gostaria de incluir mais algum indicador específico? Como, por exemplo, o custo total por equipamento ou por tipo de manutenção?  
@@ -223,7 +223,7 @@ Como gestor hospitalar ou administrador, quero gerar relatórios sobre status do
 
 ---
 
-### 9. **Gerenciamento de Estoque de Peças**  
+- ### 9. **Gerenciamento de Estoque de Peças**  
 **Conversa com o P.O:**  
 **Desenvolvedor:**  
 Para o gerenciamento de estoque de peças, você gostaria de integrar o sistema com o fornecedor para que a reposição de peças seja feita automaticamente quando o estoque atingir um valor mínimo?  
@@ -242,7 +242,7 @@ Como técnico de manutenção, quero ter controle sobre as peças disponíveis n
 
 ---
 
-### 10. **Cadastro e Classificação de Equipamentos**  
+- ### 10. **Cadastro e Classificação de Equipamentos**  
 **Conversa com o P.O:**  
 **Desenvolvedor:**  
 No cadastro de novos equipamentos, você gostaria de incluir alguma informação adicional, como a data de aquisição ou o fabricante? E para a classificação dos equipamentos, deveríamos ter algum campo de "última manutenção"?  
@@ -261,7 +261,7 @@ Como administrador da clínica, quero cadastrar novos equipamentos no sistema, p
 
 ---
 
-### 11. **Painel de Prioridades e Urgências**  
+- ### 11. **Painel de Prioridades e Urgências**  
 **Conversa com o P.O:**  
 **Desenvolvedor:**  
 Você mencionou um painel destacando as O.S. urgentes. Como o sistema deve lidar com mudanças de prioridade? Se, por exemplo, uma O.S. "Média" se tornar urgente, como devemos mostrar isso para os técnicos?  
@@ -280,7 +280,7 @@ Como gestor hospitalar, quero visualizar um painel que prioriza as O.S. mais urg
 
 ---
 
-### 12. **Histórico de Intervenções Técnicas**  
+- ### 12. **Histórico de Intervenções Técnicas**  
 **Conversa com o P.O:**  
 **Desenvolvedor:**  
 Quando falamos sobre o histórico de intervenções, você imagina que ele deve incluir apenas as manutenções ou também detalhes sobre as falhas encontradas durante a inspeção?  
