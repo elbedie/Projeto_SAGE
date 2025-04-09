@@ -62,6 +62,9 @@ Como usuário do sistema, quero fazer login de forma segura e escolher meu perfi
 - Deve haver opção de recuperação de senha.
 - O sistema adapta a interface conforme o perfil do usuário (Gestor, Técnico, Administrador).
 
+**Implementação no protótipo:**
+![image](https://github.com/user-attachments/assets/97d60a62-5d38-4bce-9f1c-30e13ffabd94)
+
 ---
 
 ### 2. **Visualização de Dashboard**  
@@ -78,6 +81,10 @@ Como gestor hospitalar, quero ver um painel de controle com status dos equipamen
 - Exibir status dos equipamentos e O.S. abertas.
 - Incluir indicadores visuais de criticidade.
 - Permitir filtros por período e tipo de manutenção.
+**Implementação no protótipo:**
+![image](https://github.com/user-attachments/assets/0d4e5bf6-8137-47f0-94e6-a58c182367e3)
+![image](https://github.com/user-attachments/assets/363e0d90-8e49-40a6-b8c6-050b4cd0203e)
+![image](https://github.com/user-attachments/assets/8381bd9f-2dc8-4cbc-94f5-61d5b7d0f2db)
 
 ---
 
@@ -112,6 +119,11 @@ Como técnico de manutenção, quero abrir uma O.S. rapidamente, para garantir q
 - Selecionar equipamento e relatar problema.
 - Definir prioridade da O.S. (Baixa, Média, Alta).
 - Atribuir técnico responsável.
+**Implementação no protótipo:**
+![image](https://github.com/user-attachments/assets/bc4c5267-3046-4ce4-9c66-3bf91961e82a)
+![image](https://github.com/user-attachments/assets/544e939c-1ba4-4dcd-ad8a-5984a27a3494)
+
+
 
 ---
 
@@ -130,6 +142,9 @@ Como técnico de manutenção, quero registrar detalhes da O.S. ao encerrá-la, 
 - Registrar peças substituídas e tempo gasto.
 - Gerar relatório automático da intervenção.
 
+**Implementação no protótipo:**
+![image](https://github.com/user-attachments/assets/130016b9-d43e-438f-8dd9-d730f8a31b4e)
+
 ---
 
 ### 6. **Controle de Contratos**  
@@ -146,6 +161,8 @@ Como gestor hospitalar, quero monitorar contratos com fornecedores, para garanti
 - Permitir cadastro e visualização dos contratos.
 - Gerar alertas para contratos próximos ao vencimento.
 - Anexar documentos contratuais.
+**Implementação no protótipo:**
+![image](https://github.com/user-attachments/assets/c66db552-bb0a-4b94-af8e-4729e3b53d7b)
 
 ---
 
