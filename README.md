@@ -46,6 +46,7 @@ Utilizamos a metodologia MoSCoW para priorizar as funcionalidades de **SAGE**, g
 - 🤖 **Inteligência Artificial para Previsão de Falhas**  
 
 ## 🧑‍💻 Histórias de Usuário 
+[Screencast](https://drive.google.com/file/d/1foDUKuqZTrG89-B_wx9Gv1R1nwtUj-_m/view?usp=drive_link)
 
 ### 1. **Autenticação e Definição de Perfil**  
 **Conversa com o P.O:**  
@@ -61,7 +62,9 @@ Como usuário do sistema, quero fazer login de forma segura e escolher meu perfi
 - O sistema deve permitir login e senha.
 - Deve haver opção de recuperação de senha.
 - O sistema adapta a interface conforme o perfil do usuário (Gestor, Técnico, Administrador).
-
+- 
+**Time Stamp:** 00:52-01:06  
+**Figma Time Stamp:** 02:48-03:38
 **Implementação no protótipo:**
 ![image](https://github.com/user-attachments/assets/97d60a62-5d38-4bce-9f1c-30e13ffabd94)
 
@@ -81,6 +84,9 @@ Como gestor hospitalar, quero ver um painel de controle com status dos equipamen
 - Exibir status dos equipamentos e O.S. abertas.
 - Incluir indicadores visuais de criticidade.
 - Permitir filtros por período e tipo de manutenção.
+
+**Time Stamp:** 01:06-01:15  
+**Figma Time Stamp:** 03:38-04:16; 04:47-05:50; 06:18-06:48
 **Implementação no protótipo:**
 ![image](https://github.com/user-attachments/assets/0d4e5bf6-8137-47f0-94e6-a58c182367e3)
 ![image](https://github.com/user-attachments/assets/363e0d90-8e49-40a6-b8c6-050b4cd0203e)
@@ -103,6 +109,8 @@ Como técnico de manutenção, quero consultar um equipamento pelo código ou no
 - Mostrar status atual do equipamento.
 - Listar histórico completo de manutenções.
 
+**Time Stamp:** 01:15-01:22 
+
 ---
 
 ### 4. **Abertura de Ordem de Serviço (O.S.)**  
@@ -119,11 +127,12 @@ Como técnico de manutenção, quero abrir uma O.S. rapidamente, para garantir q
 - Selecionar equipamento e relatar problema.
 - Definir prioridade da O.S. (Baixa, Média, Alta).
 - Atribuir técnico responsável.
+
+**Time Stamp:**  01:23-01:30  
+**Figma Time Stamp:** 04:16-04:46; 06:48-07:48
 **Implementação no protótipo:**
 ![image](https://github.com/user-attachments/assets/bc4c5267-3046-4ce4-9c66-3bf91961e82a)
 ![image](https://github.com/user-attachments/assets/544e939c-1ba4-4dcd-ad8a-5984a27a3494)
-
-
 
 ---
 
@@ -142,6 +151,8 @@ Como técnico de manutenção, quero registrar detalhes da O.S. ao encerrá-la, 
 - Registrar peças substituídas e tempo gasto.
 - Gerar relatório automático da intervenção.
 
+**Time Stamp:**  01:30-01:38  
+**Figma Time Stamp:** 07:48-08:35
 **Implementação no protótipo:**
 ![image](https://github.com/user-attachments/assets/130016b9-d43e-438f-8dd9-d730f8a31b4e)
 
@@ -161,6 +172,9 @@ Como gestor hospitalar, quero monitorar contratos com fornecedores, para garanti
 - Permitir cadastro e visualização dos contratos.
 - Gerar alertas para contratos próximos ao vencimento.
 - Anexar documentos contratuais.
+
+**Time Stamp:**  01:38-01:46  
+**Figma Time Stamp:** 05:50-06:17
 **Implementação no protótipo:**
 ![image](https://github.com/user-attachments/assets/c66db552-bb0a-4b94-af8e-4729e3b53d7b)
 
@@ -180,6 +194,8 @@ Como administrador da clínica, quero receber alertas sobre manutenções progra
 - Alertas automáticos para manutenções preventivas.
 - Notificações sobre falhas recorrentes.
 - Opção de configurar preferências para receber alertas.
+  
+**Time Stamp:**  01:46-01:56 
 
 ---
 
@@ -198,6 +214,8 @@ Como gestor hospitalar ou administrador, quero gerar relatórios sobre status do
 - Mostrar tempo médio de resposta e custo de manutenção.
 - Possibilidade de exportação em PDF e Excel.
 
+**Time Stamp:**  01:56-02:04
+
 ---
 
 ### 9. **Gerenciamento de Estoque de Peças**  
@@ -214,6 +232,8 @@ Como técnico de manutenção, quero ter controle sobre as peças disponíveis n
 - Permitir cadastro e controle de estoque de peças.
 - Notificar sobre itens com estoque baixo.
 - Registrar histórico de uso de peças em manutenções.
+
+**Time Stamp:**   02:04-02:13
 
 ---
 
@@ -232,6 +252,8 @@ Como administrador da clínica, quero cadastrar novos equipamentos no sistema, p
 - Classificar equipamentos por tipo, localização e criticidade.
 - Vincular equipamentos a contratos de manutenção.
 
+**Time Stamp:**   02:13-02:22
+
 ---
 
 ### 11. **Painel de Prioridades e Urgências**  
@@ -248,6 +270,8 @@ Como gestor hospitalar, quero visualizar um painel que prioriza as O.S. mais urg
 - Criar um painel destacando O.S. urgentes.
 - Permitir reordenação de prioridades em tempo real.
 - Integrar com alertas automáticos para notificação de emergências.
+
+**Time Stamp:**   02:22-02:29
 
 ---
 
@@ -266,11 +290,13 @@ Como técnico de manutenção, quero acessar um histórico detalhado de todas as
 - Permitir filtros por tipo de falha ou componente trocado.
 - Gerar insights sobre padrões de falha recorrentes.
 
+**Time Stamp:**   02:29-02:37
+
 ## 🎨 Prototipagem e Design  
 Para uma visão mais imersiva do projeto, confira nossos protótipos e veja como **SAGE** vai revolucionar a gestão de equipamentos hospitalares:
 
 - **Protótipos Lo-Fi** disponíveis no [Figma](https://www.figma.com/proto/fNpzjR1EqV8dfAkAnqauC4/SAGE?node-id=16-283&p=f&t=MnvjLIMUqd6eujuW-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1)
-- **Screencast** para explicar e visualizar o protótipo em desenvolvimento [Link do Screencast](#)
+- **Screencast** para explicar e visualizar o protótipo em desenvolvimento [Link do Screencast](https://drive.google.com/file/d/1foDUKuqZTrG89-B_wx9Gv1R1nwtUj-_m/view?usp=drive_link)
 
 ## 📸 Capturas de Tela e Backlog (Trello)  
 Acompanhe nosso progresso diretamente nas ferramentas de gestão de projetos:
@@ -280,18 +306,43 @@ Acompanhe nosso progresso diretamente nas ferramentas de gestão de projetos:
   ![backlog](https://github.com/user-attachments/assets/2a748d86-6a82-4d64-989b-53a576fe3ef8)
 
 ## 📚 Sketches e Storyboards  
-Acompanhe o desenvolvimento do projeto com os sketches e storyboards das funcionalidades em andamento: [Figma](https://www.figma.com/proto/fNpzjR1EqV8dfAkAnqauC4/SAGE?node-id=16-283&p=f&t=MnvjLIMUqd6eujuW-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1)
-
-- **História 1**: Autenticação e Definição de Perfil [Link do Screencast](#) (MINUTAGEM: XX:XX - XX:XX)  
-- **História 2**: Visualização de Dashboard [Link do Screencast](#) (MINUTAGEM: XX:XX - XX:XX)  
-- **História 4**: Abertura de Ordem de Serviço [Link do Screencast](#) (MINUTAGEM: XX:XX - XX:XX)    
-- **História 5**: Fechamento de Ordem de Serviço com Relatório [Link do Screencast](#) (MINUTAGEM: XX:XX - XX:XX)
-- **História 6**: Controle de Contratos [Link do Screencast](#) (MINUTAGEM: XX:XX - XX:XX)
+Acompanhe o desenvolvimento do projeto com os sketches e storyboards das funcionalidades em andamento: [Figma](https://www.figma.com/proto/fNpzjR1EqV8dfAkAnqauC4/SAGE?node-id=16-283&p=f&t=MnvjLIMUqd6eujuW-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1), [Link do Screencast](https://drive.google.com/file/d/1foDUKuqZTrG89-B_wx9Gv1R1nwtUj-_m/view?usp=drive_link)
+  
+- **História 1**: Autenticação e Definição de Perfil (MINUTAGEM: 00:52-01:06; 02:48-03:38)  
+- **História 2**: Visualização de Dashboard (MINUTAGEM: 01:06-01:15; 03:38-04:16; 04:47-05:50; 06:18-06:48)  
+- **História 4**: Abertura de Ordem de Serviço (MINUTAGEM: 01:23-01:30; 04:16-04:46; 06:48-07:48)    
+- **História 5**: Fechamento de Ordem de Serviço com Relatório (MINUTAGEM: 01:30-01:38; 07:48-08:35)
+- **História 6**: Controle de Contratos (MINUTAGEM: 01:38-01:46; 05:50-06:17)
 
 ## 🎥 Screencast do Protótipo  
 Assista ao vídeo do protótipo para ver como o sistema funciona e entender como ele pode beneficiar a gestão de equipamentos hospitalares:
 
-- [Screencast do Protótipo](#)
+- [Screencast do Protótipo](https://drive.google.com/file/d/1foDUKuqZTrG89-B_wx9Gv1R1nwtUj-_m/view?usp=drive_link)
+
+### 1. TIME STAMP
+
+- **INTRODUÇÃO**: 00:00-00:51  
+- **HU 1 (Autenticação e Definição de Perfil)**: 00:52-01:06  
+- **HU 2 (Visualização de Dashboard)**: 01:06-01:15  
+- **HU 3 (Consulta de Equipamento)**: 01:15-01:22  
+- **HU 4 (Abertura de Ordem de Serviço (O.S.))**: 01:23-01:30  
+- **HU 5 (Fechamento de Ordem de Serviço com Relatório)**: 01:30-01:38  
+- **HU 6 (Controle de Contratos)**: 01:38-01:46  
+- **HU 7 (Alertas Automáticos de Manutenção)**: 01:46-01:56  
+- **HU 8 (Geração de Relatórios Personalizados)**: 01:56-02:04  
+- **HU 9 (Gerenciamento de Estoque de Peças)**: 02:04-02:13  
+- **HU 10 (Cadastro e Classificação de Equipamentos)**: 02:13-02:22  
+- **HU 11 (Painel de Prioridades e Urgências)**: 02:22-02:29  
+- **HU 12 (Histórico de Intervenções Técnicas)**: 02:29-02:37  
+- **Encerramento HU’s**: 02:38-02:48  
+
+**Figma**
+
+- **HU 1 (Autenticação e Definição de Perfil)**: 02:48-03:38  
+- **HU 2 (Visualização de Dashboard)**: 03:38-04:16; 04:47-05:50; 06:18-06:48  
+- **HU 4 (Abertura de Ordem de Serviço (O.S.))**: 04:16-04:46; 06:48-07:48  
+- **HU 5 (Fechamento de Ordem de Serviço com Relatório)**: 07:48-08:35  
+- **HU 6 (Controle de Contratos)**: 05:50-06:17  
 
 ---
 
