@@ -1,0 +1,115 @@
+.abrir-os-bg {
+    flex: 1;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8fafc;
+  }
+  .abrir-os-form {
+    background: #fff;
+    border-radius: 17px;
+    padding: 38px 42px 32px 42px;
+    min-width: 340px;
+    max-width: 375px;
+    box-shadow: 0px 6px 38px 0px #1e283f19;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    animation: fadein .4s;
+  }
+  @keyframes fadein {
+    from { opacity: 0; transform: translateY(24px);}
+    to { opacity: 1; transform: none;}
+  }
+  .abrir-os-form h2 {
+    text-align: center;
+    margin-bottom: 18px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1.41rem;
+    color: #24315b;
+  }
+  .abrir-os-form label {
+    margin-top: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #24417c;
+    margin-bottom: -2px;
+  }
+  
+  /* INPUTS */
+  .os-input {
+    border: 1.2px solid #e2eafa;
+    border-radius: 7px;
+    font-size: 1rem;
+    padding: 8px 12px;
+    margin-bottom: 2px;
+    background: #f7fafe;
+    transition: box-shadow .15s, border .14s;
+    outline: none;
+    font-family: "Inter", Arial, sans-serif;
+  }
+  
+  .os-input:focus {
+    border: 1.8px solid #4986ec;
+    box-shadow: 0 2px 9px #2561cf13;
+    background: #f5f9ff;
+  }
+  
+  .abrir-os-form textarea.os-input {
+    min-height: 54px;
+    max-height: 120px;
+    resize: vertical;
+  }
+  
+  /* MENSAGEM */
+  .os-msg {
+    text-align: center;
+    padding: 8px 0 7px 0;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 7px 0 0px 0;
+    letter-spacing: 0.01em;
+  }
+  .os-msg.sucesso {
+    background: #ecfaea;
+    color: #108f18;
+    border: 1px solid #b1e1b9;
+  }
+  .os-msg.erro {
+    background: #fff1f0;
+    color: #b10404;
+    border: 1px solid #ffd7d7;
+  }
+  
+  /* BOTÃO */
+  .os-btn {
+    margin-top: 16px;
+    background: #34a853;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    font-size: 1.07rem;
+    padding: 11px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background .17s, box-shadow .16s;
+    box-shadow: 0 1.5px 12px #45826c25;
+    letter-spacing: .04em;
+  }
+  .os-btn:hover, .os-btn:focus {
+    background: #1c6b31;
+    box-shadow: 0 4px 18px #5efbb13c;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 650px) {
+    .abrir-os-form {
+      padding: 8vw 3vw 7vw 3vw;
+      min-width: 0;
+      width: 95vw;
+      max-width: 98vw;
+    }
+  }

@@ -1,0 +1,84 @@
+.relatorio-word-paper {
+    background: #fff;
+    border-radius: 20px;
+    max-width: 720px;
+    margin: 48px auto 0 auto;
+    padding: 56px 56px 50px 56px;
+    box-shadow: 0 8px 36px #0001, 0 1.5px 0 #e6eaf1 inset;
+    font-family: 'Calibri', 'Segoe UI', Arial, sans-serif;
+    min-height: 500px;
+    border: 1.5px solid #e7e7ea;
+  }
+  
+  .relatorio-header {
+    text-align: center;
+    font-size: 1.55rem;
+    font-weight: 800;
+    color: #22223B;
+    margin-bottom: 10px;
+    letter-spacing: .4px;
+  }
+  
+  .relatorio-subtitulo {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #29304a;
+    margin-bottom: 29px;
+    opacity: 0.7;
+  }
+  
+  .relatorio-divisor {
+    margin: 18px 0 28px 0;
+    border: 0;
+    border-top: 2px solid #e5e8ee;
+  }
+  
+  .relatorio-campo {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 15px;
+    font-size: 1.13rem;
+  }
+  
+  .relatorio-label {
+    min-width: 188px;
+    font-weight: 700;
+    color: #283042;
+    letter-spacing: 0.3px;
+  }
+  
+  .relatorio-value {
+    color: #202944;
+    font-weight: 400;
+    white-space: pre-line;
+  }
+  
+  .relatorio-status-finalizada {
+    color: #388237;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  .relatorio-voltar-btn {
+    background: #eaf3ff;
+    color: #264770;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    padding: 8px 24px;
+    font-size: 1rem;
+    margin-bottom: 24px;
+    margin-left: -10px;
+    box-shadow: 0 1px 8px #0001;
+    cursor: pointer;
+    transition: background .2s;
+  }
+  .relatorio-voltar-btn:hover {
+    background: #cddbef;
+  }
+  
+  @media (max-width:800px) {
+    .relatorio-word-paper { padding: 15px 1vw; }
+    .relatorio-label { min-width: 105px; }
+  }

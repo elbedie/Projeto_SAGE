@@ -1,0 +1,105 @@
+.fecharos-flex {
+    display: flex;
+  }
+  .fecharos-main-bg {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f8fafc;
+  }
+  .fecharos-form {
+    background: #fff;
+    border-radius: 14px;
+    min-width: 400px;
+    box-shadow: 0 3px 24px 0 rgba(0,0,0,0.10);
+    padding: 36px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+  .fecharos-form h2 {
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #22223b;
+  }
+  .fecharos-form label {
+    font-weight: 500;
+    color: #262c3c;
+    font-size: 1rem;
+  }
+  .fecharos-input {
+    border: 1px solid #cdcddf;
+    border-radius: 5px;
+    padding: 9px 12px;
+    font-size: 1rem;
+    transition: border-color 0.15s;
+    background: #f6f8fa;
+  }
+  .fecharos-input:focus {
+    outline: none;
+    border-color: #3766fb;
+  }
+  .fecharos-input.readonly {
+    background: #ebebf5;
+    color: #7c7c7c;
+    cursor: not-allowed;
+  }
+  .fecharos-btn {
+    background: #34a853;
+    color: #fff;
+    border: 0;
+    padding: 12px 0;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 700;
+    margin-top: 8px;
+    transition: background 0.16s;
+  }
+  .fecharos-btn:hover {
+    background: #219242;
+  }
+  .fecharos-msg {
+    margin: 4px 0 0 0;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 7px 10px;
+    text-align: center;
+  }
+  .fecharos-msg.sucesso {
+    background: #def5e9;
+    color: #15803d;
+  }
+  .fecharos-msg.erro {
+    background: #fde4e1;
+    color: #dc2626;
+  }
+
+  .fecharos-row {
+    display: flex;
+    gap: 18px;
+  }
+  
+  .fecharos-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Garanta que o form não fique muito largo */
+  .fecharos-form {
+    max-width: 600px;
+    min-width: 320px;
+  }
+  
+  /* Ajuste para responsividade em telas menores */
+  @media (max-width: 850px) {
+    .fecharos-form { max-width: 98vw; min-width: unset; padding: 24px 6vw; }
+    .fecharos-row { flex-direction: column; gap: 0; }
+  }
+  

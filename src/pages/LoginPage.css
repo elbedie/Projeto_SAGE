@@ -1,0 +1,135 @@
+.login-bg {
+    min-height: 100vh;
+    background: #2f3445;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-box {
+    background: #fff;
+    padding: 38px 48px 30px 48px;
+    border-radius: 12px;
+    box-shadow: 0 2px 32px 2px rgba(0,0,0,0.11);
+    min-width: 370px;
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 5px;
+  }
+  .logo-title-label {
+    font-size: 54px;
+    font-weight: 800;
+    color: #101010;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    letter-spacing: 0.5px;
+    margin-left: 2px;
+  }
+  .gear {
+    display: flex;
+    align-items: center;
+  }
+  .sub {
+    font-size: 14.5px;
+    text-align: center;
+    margin-bottom: 22px;
+    color: #222;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.17;
+    margin-top: 4px;
+    font-weight: 500;
+  }
+  
+  .input-icon {
+    width: 100%;
+    position: relative;
+    margin-bottom: 12px;
+  }
+  .input-icon-ico {
+    position: absolute;
+    left: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #757575;
+    font-size: 18px;
+    z-index: 2;
+  }
+  .input-icon input,
+  .input-icon select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px 10px 40px; /* espaço ÍCONE à esquerda */
+    border-radius: 6px;
+    border: 1px solid #c7cad1;
+    background: #fcfcfc;
+    font-size: 17px;
+    font-family: inherit;
+    outline: none;
+    height: 42px;
+    margin: 0;
+    display: block;
+    transition: border 0.2s;
+    color: #757575;
+  }
+  .input-icon input:focus,
+  .input-icon select:focus {
+    border: 1.5px solid #46617a;
+  }
+  
+  .input-icon select {
+    appearance: none;           /* Remove indicador nativo no Chrome */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 24px;        /* espaço para "caret" do select padrão */
+    background: #fcfcfc;        /* para não sobrepor cor do input */
+  }
+  
+  .erro {
+    color: #b81919;
+    margin-bottom: 4px;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .recuperar {
+    font-size: 15px;
+    margin-top: 8px;
+    cursor: pointer;
+    color: #7e8289;
+    align-self: flex-end;
+    transition: color .13s;
+  }
+  .recuperar:hover { color: #45718f; text-decoration: underline;}
+  
+  @media (max-width: 500px) {
+    .login-box {
+      min-width: 90vw;
+      max-width: 98vw;
+      padding: 16px;
+    }
+  }
+  
+  .botao-entrar {
+    width: 100%;
+    background: #466088;
+    color: #fff;
+    border: none;
+    padding: 12px 0;
+    font-size: 19px;
+    margin-top: 7px;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .botao-entrar:hover {
+    background: #32435d;
+  }
