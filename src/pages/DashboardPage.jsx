@@ -1,16 +1,13 @@
 import Sidebar from "../components/Sidebar/Sidebar";
 import { useEffect, useState } from "react";
 import "./DashboardPage.css";
-
 function diasEntre(d1, d2) {
   const dd1 = new Date(d1), dd2 = new Date(d2);
   return Math.floor((dd2 - dd1) / (1000 * 60 * 60 * 24));
 }
-
 export default function DashboardPage() {
   const perfil = sessionStorage.getItem("perfil") || "tecnico";
   const nome = sessionStorage.getItem("nomeUser") || "Usuário";
-
   const [detalhes, setDetalhes] = useState(null);
   const [solExcluir, setSolExcluir] = useState(null);
   const [solicitacoes, setSolicitacoes] = useState([
@@ -35,7 +32,6 @@ export default function DashboardPage() {
       }
     }
   ]);
-
   const [osAbertas, setOsAbertas] = useState([]);
   const [osPendentes, setOsPendentes] = useState([]);
   const [placeholderOsAbertas] = useState([
@@ -48,7 +44,6 @@ export default function DashboardPage() {
     { nome: "Madalena Aqua", detalhes: { setor: "Enfermaria", data: "2024-04-10" } },
     { nome: "Julio Bim", detalhes: { setor: "Enfermaria", data: "2024-04-12" } },
   ]);
-
   useEffect(() => {
     // Carrega Solicitações do localStorage
     const doStorage = JSON.parse(localStorage.getItem("solicitacoes") || "[]");
@@ -62,13 +57,11 @@ export default function DashboardPage() {
         )
       ]);
     }
-
     // Carrega OS Abertas e calcula pendentes
     const osAberts = JSON.parse(localStorage.getItem("osAbertas") || "[]").filter(os => !os.fechada);
     const hoje = new Date();
     const abertas = [];
     const pendentes = [];
-
     for (let os of osAberts) {
       const dataCriacao = os.detalhes?.data || os.createdAt || os.dataCriacao;
       if (!dataCriacao) {
@@ -84,10 +77,8 @@ export default function DashboardPage() {
     }
     setOsAbertas(abertas);
     setOsPendentes(pendentes);
-
     // eslint-disable-next-line
   }, []);
-
   function abrirDetalhes(solic) {
     setDetalhes(solic);
   }
@@ -113,12 +104,27 @@ export default function DashboardPage() {
     });
     setSolExcluir(null);
   }
-
   return (
-    <div style={{display:"flex"}}>
-      <Sidebar perfil={perfil} nomeUser={nome}/>
+    <div style={{ display: "flex" }}>
+      <Sidebar perfil={perfil} nomeUser={nome} />
       <main className="main-dash dash-centered">
-        <img src="/logo.png" alt="SAGE" className="sage-logo" />
+        <div className="summary-row">
+          <div className="summary-box resumo-solic">
+            <svg width="24" height="24" fill="none" stroke="#355390" strokeWidth="1.5"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 6h6"/></svg>
+            <span>{solicitacoes.length}</span>
+            <span>Solicitações</span>
+          </div>
+          <div className="summary-box resumo-abertas">
+            <svg width="24" height="24" fill="none" stroke="#2465c5" strokeWidth="1.5"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M8 9h8"/></svg>
+            <span>{osAbertas.length || placeholderOsAbertas.length}</span>
+            <span>O.S. Abertas</span>
+          </div>
+          <div className="summary-box resumo-pendentes">
+            <svg width="24" height="24" fill="none" stroke="#aa2222" strokeWidth="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l4 2"/></svg>
+            <span>{osPendentes.length || placeholderOsPendentes.length}</span>
+            <span>O.S. Pendentes</span>
+          </div>
+        </div>
         <div className="cards-container">
           <section className="section-card">
             <h3 className="titulo-card">Solicitações</h3>
@@ -130,16 +136,15 @@ export default function DashboardPage() {
             {solicitacoes.map((s, i) => (
               <div className="linha-card" key={i}>
                 <span>{s.nome} - {s.equipamento}</span>
-                <span style={{display:"flex", gap:9}}>
+                <span style={{ display: "flex", gap: 10 }}>
                   <button
                     className="botao-card"
-                    onClick={()=>abrirDetalhes(s.detalhes)}
+                    onClick={() => abrirDetalhes(s.detalhes)}
                   >Ver detalhes</button>
                   <button
                     className="botao-card botao-excluir"
                     onClick={() => setSolExcluir(i)}
                     title="Excluir solicitação"
-                    style={{background:"#ffeaea", color:"#ab0613"}}
                   >✕</button>
                 </span>
               </div>
@@ -148,27 +153,27 @@ export default function DashboardPage() {
           <div className="cards-grid">
             <section className="section-card">
               <h3 className="titulo-card">O.S Abertas</h3>
-              {(osAbertas.length===0 && placeholderOsAbertas.length>0) && placeholderOsAbertas.map((os, idx) => (
+              {(osAbertas.length === 0 && placeholderOsAbertas.length > 0) && placeholderOsAbertas.map((os, idx) => (
                 <div className="linha-card os-linha" key={os.nome + idx}>
                   <span className="os-nome">{os.nome}</span>
                   <span className="os-setor">({os.detalhes?.setor})</span>
                   <span className="os-data-verde">Aberta em {os.detalhes?.data}</span>
                 </div>
               ))}
-              {osAbertas.length>0 && osAbertas.map(os => (
+              {osAbertas.length > 0 && osAbertas.map(os => (
                 <div className="linha-card os-linha" key={os.id}>
                   <span className="os-nome">{os.nome || os.tecnico || "Desconhecido"}</span>
                   <span className="os-setor">({os.detalhes?.setor})</span>
                   <span className="os-data-verde">Aberta em {os.detalhes?.data}</span>
                 </div>
               ))}
-              {osAbertas.length===0 && placeholderOsAbertas.length===0 && (
+              {osAbertas.length === 0 && placeholderOsAbertas.length === 0 && (
                 <div className="linha-card">Nenhuma O.S. aberta</div>
               )}
             </section>
             <section className="section-card">
               <h3 className="titulo-card">O.S Pendentes</h3>
-              {(osPendentes.length===0 && placeholderOsPendentes.length>0) && placeholderOsPendentes.map((os, idx) => (
+              {(osPendentes.length === 0 && placeholderOsPendentes.length > 0) && placeholderOsPendentes.map((os, idx) => (
                 <div className="linha-card os-linha" key={os.nome + idx}>
                   <span className="os-nome">{os.nome}</span>
                   <span className="os-setor">({os.detalhes?.setor})</span>
@@ -177,7 +182,7 @@ export default function DashboardPage() {
                   </span>
                 </div>
               ))}
-              {osPendentes.length>0 && osPendentes.map(os => (
+              {osPendentes.length > 0 && osPendentes.map(os => (
                 <div className="linha-card os-linha" key={os.id}>
                   <span className="os-nome">{os.nome || os.tecnico || "Desconhecido"}</span>
                   <span className="os-setor">({os.detalhes?.setor})</span>
@@ -186,13 +191,12 @@ export default function DashboardPage() {
                   </span>
                 </div>
               ))}
-              {osPendentes.length===0 && placeholderOsPendentes.length===0 && (
+              {osPendentes.length === 0 && placeholderOsPendentes.length === 0 && (
                 <div className="linha-card">Nenhuma O.S. pendente</div>
               )}
             </section>
           </div>
         </div>
-        {/* MODAL DETALHES */}
         {!!detalhes && (
           <div className="modal-bg">
             <div className="modal-detalhes">
@@ -203,18 +207,17 @@ export default function DashboardPage() {
               <div><b>Descrição:</b> {detalhes.descricao || "Sem descrição."}</div>
               <div className="modal-actions">
                 <button className="botao-acao vermelho" onClick={fecharModal}>Fechar</button>
-                <button className="botao-acao verde" onClick={() => window.location='/abrir-os'}>Abrir O.S.</button>
+                <button className="botao-acao verde" onClick={() => window.location = '/abrir-os'}>Abrir O.S.</button>
               </div>
             </div>
           </div>
         )}
-        {/* MODAL CONFIRMAÇÃO DE EXCLUSÃO */}
         {solExcluir !== null && (
           <div className="modal-bg">
-            <div className="modal-detalhes" style={{textAlign: "center"}}>
-              <h2 style={{color:'#a01818'}}>Excluir solicitação?</h2>
+            <div className="modal-detalhes" style={{ textAlign: "center" }}>
+              <h2 style={{ color: '#a01818' }}>Excluir solicitação?</h2>
               <p>Tem certeza que deseja <b>excluir</b> esta solicitação? Esta ação não poderá ser desfeita.</p>
-              <div className="modal-actions" style={{justifyContent:'center', marginTop: 24}}>
+              <div className="modal-actions" style={{ justifyContent: 'center', marginTop: 24 }}>
                 <button className="botao-acao vermelho" onClick={() => removerSolicitacaoConfirmado(solExcluir)}>
                   Sim, excluir
                 </button>
