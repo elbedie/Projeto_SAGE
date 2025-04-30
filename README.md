@@ -70,6 +70,7 @@ Como usuário do sistema, quero fazer login de forma segura e escolher meu perfi
 ![image](https://github.com/user-attachments/assets/97d60a62-5d38-4bce-9f1c-30e13ffabd94)
 
 **Time Stamp:** 00:00-00:28
+
 **Implementação no site:**
 ![image](https://github.com/user-attachments/assets/bdb0cadc-7da3-4914-855a-87686af44a48)
 
@@ -100,6 +101,7 @@ Como gestor hospitalar, quero ver um painel de controle com status dos equipamen
 ![image](https://github.com/user-attachments/assets/8381bd9f-2dc8-4cbc-94f5-61d5b7d0f2db)
 
 **Time Stamp:** 00:28-01:23 
+
 **Implementação no site:**
 ![image](https://github.com/user-attachments/assets/d79fd30f-8833-409c-935a-fb6d61b6a801)
 
@@ -148,6 +150,7 @@ Como técnico de manutenção, quero abrir uma O.S. rapidamente, para garantir q
 ![image](https://github.com/user-attachments/assets/544e939c-1ba4-4dcd-ad8a-5984a27a3494)
 
 **Time Stamp:** 01:24-01:55
+
 **Implementação no site:**
 ![PRINT abrir o s 1](https://github.com/user-attachments/assets/9c68a33b-b77b-4bf8-b63e-8c8e80791d5b)
 ![PRINT O S 2](https://github.com/user-attachments/assets/fa2f6a86-0cf6-441d-98ac-d6cfb1a20b69)
@@ -177,6 +180,7 @@ Como técnico de manutenção, quero registrar detalhes da O.S. ao encerrá-la, 
 ![image](https://github.com/user-attachments/assets/130016b9-d43e-438f-8dd9-d730f8a31b4e)
 
 **Time Stamp:** 01:55-03:08 
+
 **Implementação no site:**
 ![print fechar os 1](https://github.com/user-attachments/assets/892b3701-04d1-45f3-8710-ed87cf717228)
 ![print fechar os 2](https://github.com/user-attachments/assets/25825f7a-c4f0-4d47-9ba8-e2930d74c99d)
