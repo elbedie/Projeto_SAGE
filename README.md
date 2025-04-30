@@ -356,6 +356,12 @@ Assista ao vídeo do protótipo para ver como o sistema funciona e entender como
 - Abrir O.S (Abertura de Ordem de Serviço (O.S.)):  01:24-01:55
 - Fechar O.S (Fechamento de Ordem de Serviço com Relatório): 01:55-03:08
 
+## Diagrama de Atividades
+
+Acesse o nosso diagramas de atividade do Projeto SAGE [aqui](https://www.canva.com/design/DAGl3NLtZCU/LMaEQjuhNSR8kIqoEzb_eQ/edit)!
+
+![diagrama de atividades sage](https://drive.google.com/file/d/1XIMGHmWX8XGRcyFyhbIY2kNLohys-7yb/view?usp=drive_link)
+
 ---
 
 **Transforme a gestão de manutenção hospitalar com o SAGE** — mais controle, mais eficiência, mais segurança para você e sua equipe. Se você está interessado em saber mais ou contribuir para o desenvolvimento deste projeto inovador, não hesite em entrar em contato!
