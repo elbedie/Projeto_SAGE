@@ -440,7 +440,7 @@ Assista ao vídeo do protótipo para ver como o sistema funciona e entender como
 
 Acesse o nosso diagrama de atividade do Projeto SAGE através deste [link](https://www.canva.com/design/DAGl3NLtZCU/LMaEQjuhNSR8kIqoEzb_eQ/edit).
 
-![diagrama de atividades sage](https://github.com/user-attachments/assets/27f3afce-a9c7-44d6-a610-5aec15e46f7d)
+![image](https://github.com/user-attachments/assets/3d72fe5d-e5f4-4e7b-b939-8d0d95f5f594)
 
 ## Relatório de Programação em Pares
 
@@ -493,12 +493,8 @@ Em nosso projeto **React**, essa abordagem foi usada para:
 
 A prática de **programação em pares** foi essencial para garantir a entrega de funcionalidades com qualidade e de acordo com o que foi priorizado pelo cliente. A combinação de revisão constante, troca de conhecimentos e tomada de decisão conjunta fortaleceu o desenvolvimento colaborativo e alinhado aos objetivos do projeto.
 
-
----
-
-**Transforme a gestão de manutenção hospitalar com o SAGE** — mais controle, mais eficiência, mais segurança para você e sua equipe. Se você está interessado em saber mais ou contribuir para o desenvolvimento deste projeto inovador, não hesite em entrar em contato!
-
----
+![image](https://github.com/user-attachments/assets/c8aba428-507a-42d6-bff1-dc2b8aef72ad)
+![image](https://github.com/user-attachments/assets/6990909c-8381-4490-8442-0f588cf80e02)
 
 ### Bug Tracker
 
@@ -519,3 +515,8 @@ A prática de **programação em pares** foi essencial para garantir a entrega d
 - Solução: Foi feita uma revisão nas declarações de import e o caminho do arquivo foi corrigido para refletir a nova estrutura de diretórios. Após o ajuste, o projeto compilou normalmente sem erros.
 
 
+---
+
+**Transforme a gestão de manutenção hospitalar com o SAGE** — mais controle, mais eficiência, mais segurança para você e sua equipe. Se você está interessado em saber mais ou contribuir para o desenvolvimento deste projeto inovador, não hesite em entrar em contato!
+
+---
