@@ -358,10 +358,9 @@ Assista ao vídeo do protótipo para ver como o sistema funciona e entender como
 
 ## Diagrama de Atividades
 
-Acesse o nosso diagramas de atividade do Projeto SAGE [aqui](https://www.canva.com/design/DAGl3NLtZCU/LMaEQjuhNSR8kIqoEzb_eQ/edit)!
+Acesse o nosso diagrama de atividade do Projeto SAGE através deste [link](https://www.canva.com/design/DAGl3NLtZCU/LMaEQjuhNSR8kIqoEzb_eQ/edit).
 
 ![diagrama de atividades sage](https://github.com/user-attachments/assets/27f3afce-a9c7-44d6-a610-5aec15e46f7d)
-)
 
 ---
 
