@@ -46,7 +46,7 @@ Utilizamos a metodologia MoSCoW para priorizar as funcionalidades de **SAGE**, g
 - 🤖 **Inteligência Artificial para Previsão de Falhas**  
 
 ## 🧑‍💻 Histórias de Usuário 
-[Screencast](https://drive.google.com/file/d/1foDUKuqZTrG89-B_wx9Gv1R1nwtUj-_m/view?usp=drive_link)
+[Screencast](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view)
 
 - ### 1. **Autenticação e Definição de Perfil**  
 **Conversa com o P.O:**  
@@ -63,7 +63,7 @@ Como usuário do sistema, quero fazer login de forma segura e escolher meu perfi
 - Deve haver opção de recuperação de senha.
 - O sistema adapta a interface conforme o perfil do usuário (Gestor, Técnico, Administrador).
 - 
-**Time Stamp:** 00:52-01:06  
+**Time Stamp:** 00:00-00:28  
 **Figma Time Stamp:** 02:48-03:38
   
 **Implementação no protótipo:**
@@ -86,7 +86,7 @@ Como gestor hospitalar, quero ver um painel de controle com status dos equipamen
 - Incluir indicadores visuais de criticidade.
 - Permitir filtros por período e tipo de manutenção.
 
-**Time Stamp:** 01:06-01:15  
+**Time Stamp:** 00:28-01:23  
 **Figma Time Stamp:** 03:38-04:16; 04:47-05:50; 06:18-06:48
 
 **Implementação no protótipo:**
@@ -130,7 +130,7 @@ Como técnico de manutenção, quero abrir uma O.S. rapidamente, para garantir q
 - Definir prioridade da O.S. (Baixa, Média, Alta).
 - Atribuir técnico responsável.
 
-**Time Stamp:**  01:23-01:30  
+**Time Stamp:**  01:24-01:55  
 **Figma Time Stamp:** 04:16-04:46; 06:48-07:48
 
 **Implementação no protótipo:**
@@ -154,7 +154,7 @@ Como técnico de manutenção, quero registrar detalhes da O.S. ao encerrá-la, 
 - Registrar peças substituídas e tempo gasto.
 - Gerar relatório automático da intervenção.
 
-**Time Stamp:**  01:30-01:38  
+**Time Stamp:**  01:55-03:08  
 **Figma Time Stamp:** 07:48-08:35
 
 **Implementação no protótipo:**
@@ -301,7 +301,7 @@ Como técnico de manutenção, quero acessar um histórico detalhado de todas as
 Para uma visão mais imersiva do projeto, confira nossos protótipos e veja como **SAGE** vai revolucionar a gestão de equipamentos hospitalares:
 
 - **Protótipos Lo-Fi** disponíveis no [Figma](https://www.figma.com/proto/fNpzjR1EqV8dfAkAnqauC4/SAGE?node-id=16-283&p=f&t=MnvjLIMUqd6eujuW-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1)
-- **Screencast** para explicar e visualizar o protótipo em desenvolvimento [Link do Screencast](https://drive.google.com/file/d/1foDUKuqZTrG89-B_wx9Gv1R1nwtUj-_m/view?usp=drive_link)
+- **Screencast** para explicar e visualizar o protótipo em desenvolvimento [Link do Screencast](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view)
 
 ## 📸 Capturas de Tela e Backlog (Trello)  
 Acompanhe nosso progresso diretamente nas ferramentas de gestão de projetos:
@@ -311,7 +311,7 @@ Acompanhe nosso progresso diretamente nas ferramentas de gestão de projetos:
   ![backlog](https://github.com/user-attachments/assets/2a748d86-6a82-4d64-989b-53a576fe3ef8)
 
 ## 📚 Sketches e Storyboards  
-Acompanhe o desenvolvimento do projeto com os sketches e storyboards das funcionalidades em andamento: [Figma](https://www.figma.com/proto/fNpzjR1EqV8dfAkAnqauC4/SAGE?node-id=16-283&p=f&t=MnvjLIMUqd6eujuW-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1), [Link do Screencast](https://drive.google.com/file/d/1foDUKuqZTrG89-B_wx9Gv1R1nwtUj-_m/view?usp=drive_link)
+Acompanhe o desenvolvimento do projeto com os sketches e storyboards das funcionalidades em andamento: [Figma](https://www.figma.com/proto/fNpzjR1EqV8dfAkAnqauC4/SAGE?node-id=16-283&p=f&t=MnvjLIMUqd6eujuW-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1), [Link do Screencast](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view)
   
 - **História 1**: Autenticação e Definição de Perfil (MINUTAGEM: 00:52-01:06; 02:48-03:38)  
 - **História 2**: Visualização de Dashboard (MINUTAGEM: 01:06-01:15; 03:38-04:16; 04:47-05:50; 06:18-06:48)  
@@ -322,7 +322,7 @@ Acompanhe o desenvolvimento do projeto com os sketches e storyboards das funcion
 ## 🎥 Screencast do Protótipo  
 Assista ao vídeo do protótipo para ver como o sistema funciona e entender como ele pode beneficiar a gestão de equipamentos hospitalares:
 
-- [Screencast do Protótipo](https://drive.google.com/file/d/1foDUKuqZTrG89-B_wx9Gv1R1nwtUj-_m/view?usp=drive_link)
+- [Screencast do Protótipo](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view)
 
 ### 1. TIME STAMP
 
@@ -347,7 +347,20 @@ Assista ao vídeo do protótipo para ver como o sistema funciona e entender como
 - **HU 2 (Visualização de Dashboard)**: 03:38-04:16; 04:47-05:50; 06:18-06:48  
 - **HU 4 (Abertura de Ordem de Serviço (O.S.))**: 04:16-04:46; 06:48-07:48  
 - **HU 5 (Fechamento de Ordem de Serviço com Relatório)**: 07:48-08:35  
-- **HU 6 (Controle de Contratos)**: 05:50-06:17  
+- **HU 6 (Controle de Contratos)**: 05:50-06:17
+
+**Protótipo do Site**
+
+- Login (Autenticação e Definição de Perfil):  00:00-00:28
+- Dashboard Eng Clínico (Visualização de Dashboard): 00:28-01:23
+- Abrir O.S (Abertura de Ordem de Serviço (O.S.)):  01:24-01:55
+- Fechar O.S (Fechamento de Ordem de Serviço com Relatório): 01:55-03:08
+
+## Diagrama de Atividades
+
+Acesse o nosso diagrama de atividade do Projeto SAGE através deste [link](https://www.canva.com/design/DAGl3NLtZCU/LMaEQjuhNSR8kIqoEzb_eQ/edit).
+
+![diagrama de atividades sage](https://github.com/user-attachments/assets/27f3afce-a9c7-44d6-a610-5aec15e46f7d)
 
 ---
 
