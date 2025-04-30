@@ -442,17 +442,14 @@ Acesse o nosso diagrama de atividade do Projeto SAGE através deste [link](https
 
 ![diagrama de atividades sage](https://github.com/user-attachments/assets/27f3afce-a9c7-44d6-a610-5aec15e46f7d)
 
-# Relatório de Programação em Pares
-
-## Projeto: Backlog do Produto (Priorizado com o Cliente)
+## Relatório de Programação em Pares
 
 ### Funcionalidades Implementadas:
 - **Autenticação com login (e-mail/senha)**
 - **Visualização de Dashboard (engenheiro Clínico)**
 - **Abertura de Ordem de Serviço (O.S.)**
 - **Fechamento de O.S.**
-
----
+  
 
 ### 🎯 Objetivo da Programação em Pares
 
@@ -463,7 +460,7 @@ Em nosso projeto **React**, essa abordagem foi usada para:
 - Garantia de boas práticas em **React**, como separação de responsabilidades e reaproveitamento de componentes.
 - Detecção imediata de bugs ou comportamentos inesperados.
 
----
+
 
 ### ⚙️ Como Aplicamos no Projeto
 
@@ -474,7 +471,7 @@ Em nosso projeto **React**, essa abordagem foi usada para:
 | **Abertura de O.S.**              | Criação de formulários com gerenciamento de estado local e uso de componentes controlados. O navegador sugeriu melhorias no fluxo, evitando confusão.              |
 | **Fechamento de O.S.**            | Implementação de múltiplos campos (peças, tempo, descrição). Otimização de reatividade. O navegador sugeriu melhorias visuais e de campos essenciais.               |
 
----
+
 
 ### ✅ Benefícios Observados
 
@@ -483,14 +480,14 @@ Em nosso projeto **React**, essa abordagem foi usada para:
 - **Redução de retrabalho**: decisões foram tomadas em conjunto, evitando mal-entendidos de requisitos.
 - **Alinhamento com o backlog do cliente**: foco constante no que era prioritário, com base no que foi definido.
 
----
+
 
 ### 🚧 Desafios Enfrentados
 
 - **Sincronização de horários**: foi necessário ajustar as agendas para garantir que os pares pudessem trabalhar juntos.
 - **Cansaço mental**: sessões prolongadas exigem pausas regulares para manter a produtividade e concentração.
 
----
+
 
 ### 📈 Considerações Finais
 
