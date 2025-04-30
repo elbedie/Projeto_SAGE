@@ -499,3 +499,18 @@ A prática de **programação em pares** foi essencial para garantir a entrega d
 **Transforme a gestão de manutenção hospitalar com o SAGE** — mais controle, mais eficiência, mais segurança para você e sua equipe. Se você está interessado em saber mais ou contribuir para o desenvolvimento deste projeto inovador, não hesite em entrar em contato!
 
 ---
+
+### Bug Tracker
+
+**1. Erro na Rota de Abrir OS:**
+- Descrição: Ao acessar a URL https://projeto-sage-pearl.vercel.app/abrir-os resultou em erro 404, ou seja, é uma rota inexistente dentro do projeto.
+- Causa: Descobrimos que, em ambientes como o Vercel, quando o usuário atualiza a página manualmente ou acessa diretamente uma rota específica, o servidor tenta buscar um arquivo físico correspondente à URL, o servidor responde com 404.
+- Solução: Adicionamos um arquivo vercel.json na raiz do projeto:
+  <pre> ```json { "rewrites": [ { "source": "/(.*)", "destination": "/" } ] } ``` </pre>
+  Com isso, todas as requisições desconhecidas são redirecionadas para o index.html, permitindo que o React Router tome o controle e renderize corretamente a rota solicitada
+
+![erro404](https://github.com/user-attachments/assets/3d8be60a-eb0f-4667-afec-cb6b375caf0c)
+
+**2. Caminho Mal Definido na Rota**
+
+![erro-rota](https://github.com/user-attachments/assets/93bb54e1-f183-4904-a95b-ea2ef22099db)
