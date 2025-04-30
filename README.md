@@ -46,7 +46,7 @@ Utilizamos a metodologia MoSCoW para priorizar as funcionalidades de **SAGE**, g
 - 🤖 **Inteligência Artificial para Previsão de Falhas**  
 
 ## 🧑‍💻 Histórias de Usuário 
-[Screencast](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view), [Link do Site] (https://projeto-sage-pearl.vercel.app/fechar-os/ma4etlgiukpoi), [Screencast do Site] (https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view?usp=drive_link)
+[Screencast](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view), [Link do Site](https://projeto-sage-pearl.vercel.app/fechar-os/ma4etlgiukpoi), [Screencast do Site](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view?usp=drive_link)
 
 - ### 1. **Autenticação e Definição de Perfil**  
 **Conversa com o P.O:**  
@@ -71,7 +71,8 @@ Como usuário do sistema, quero fazer login de forma segura e escolher meu perfi
 
 **Time Stamp:** 00:00-00:28
 **Implementação no site:**
-![image](C:\Users\aluno\Pictures\PRINT LOGIN.PNG)
+![image](https://github.com/user-attachments/assets/bdb0cadc-7da3-4914-855a-87686af44a48)
+
 
 ---
 
@@ -90,13 +91,18 @@ Como gestor hospitalar, quero ver um painel de controle com status dos equipamen
 - Incluir indicadores visuais de criticidade.
 - Permitir filtros por período e tipo de manutenção.
 
-**Time Stamp:** 00:28-01:23  
+**Time Stamp:** 01:06-01:15 
 **Figma Time Stamp:** 03:38-04:16; 04:47-05:50; 06:18-06:48
 
 **Implementação no protótipo:**
 ![image](https://github.com/user-attachments/assets/0d4e5bf6-8137-47f0-94e6-a58c182367e3)
 ![image](https://github.com/user-attachments/assets/363e0d90-8e49-40a6-b8c6-050b4cd0203e)
 ![image](https://github.com/user-attachments/assets/8381bd9f-2dc8-4cbc-94f5-61d5b7d0f2db)
+
+**Time Stamp:** 00:28-01:23 
+**Implementação no site:**
+![image](https://github.com/user-attachments/assets/d79fd30f-8833-409c-935a-fb6d61b6a801)
+
 
 ---
 
@@ -134,12 +140,18 @@ Como técnico de manutenção, quero abrir uma O.S. rapidamente, para garantir q
 - Definir prioridade da O.S. (Baixa, Média, Alta).
 - Atribuir técnico responsável.
 
-**Time Stamp:**  01:24-01:55  
+**Time Stamp:**  01:23-01:30  
 **Figma Time Stamp:** 04:16-04:46; 06:48-07:48
 
 **Implementação no protótipo:**
 ![image](https://github.com/user-attachments/assets/bc4c5267-3046-4ce4-9c66-3bf91961e82a)
 ![image](https://github.com/user-attachments/assets/544e939c-1ba4-4dcd-ad8a-5984a27a3494)
+
+**Time Stamp:** 01:24-01:55
+**Implementação no site:**
+![PRINT abrir o s 1](https://github.com/user-attachments/assets/9c68a33b-b77b-4bf8-b63e-8c8e80791d5b)
+![PRINT O S 2](https://github.com/user-attachments/assets/fa2f6a86-0cf6-441d-98ac-d6cfb1a20b69)
+
 
 ---
 
@@ -158,11 +170,16 @@ Como técnico de manutenção, quero registrar detalhes da O.S. ao encerrá-la, 
 - Registrar peças substituídas e tempo gasto.
 - Gerar relatório automático da intervenção.
 
-**Time Stamp:**  01:55-03:08  
+**Time Stamp:**  01:30-01:38 
 **Figma Time Stamp:** 07:48-08:35
 
 **Implementação no protótipo:**
 ![image](https://github.com/user-attachments/assets/130016b9-d43e-438f-8dd9-d730f8a31b4e)
+
+**Time Stamp:** 01:55-03:08 
+**Implementação no site:**
+![print fechar os 1](https://github.com/user-attachments/assets/892b3701-04d1-45f3-8710-ed87cf717228)
+![print fechar os 2](https://github.com/user-attachments/assets/25825f7a-c4f0-4d47-9ba8-e2930d74c99d)
 
 ---
 
@@ -305,8 +322,8 @@ Como técnico de manutenção, quero acessar um histórico detalhado de todas as
 Para uma visão mais imersiva do projeto, confira nossos protótipos e veja como **SAGE** vai revolucionar a gestão de equipamentos hospitalares:
 
 - **Protótipos Lo-Fi** disponíveis no [Figma](https://www.figma.com/proto/fNpzjR1EqV8dfAkAnqauC4/SAGE?node-id=16-283&p=f&t=MnvjLIMUqd6eujuW-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1)
-- **Screencast** para explicar e visualizar o protótipo em desenvolvimento [Link do Screencast](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view), [Screencast do Site] (https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view?usp=drive_link)
-- **Implementação** para visualizar as funcionalidades implementadas. Instruções de acesso: Clique no link, realize o login e explore o sistema! [Link do Site] (https://projeto-sage-pearl.vercel.app/fechar-os/ma4etlgiukpoi)
+- **Screencast** para explicar e visualizar o protótipo em desenvolvimento [Link do Screencast](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view), [Screencast do Site](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view?usp=drive_link)
+- **Implementação** para visualizar as funcionalidades implementadas. Instruções de acesso: Clique no link, realize o login e explore o sistema! [Link do Site](https://projeto-sage-pearl.vercel.app/fechar-os/ma4etlgiukpoi)
   # Instruções para Acessar o Site
 
 1. **Abra seu Navegador de Internet:**
@@ -318,7 +335,7 @@ Para uma visão mais imersiva do projeto, confira nossos protótipos e veja como
 
 2. **Digite o Endereço do Site:**
    - Na barra de endereços do navegador (onde normalmente aparece "www" ou o link do site), digite o **URL** completo do site. Exemplo:
-     - `https://projeto-sage-pearl.vercel.app/fechar-os/ma4etlgiukpoi`
+     - `https://projeto-sage-pearl.vercel.app`
    
 3. **Acesse o Site:**
    - Após digitar o URL, pressione a tecla **Enter** ou **Return** no teclado.
@@ -340,9 +357,6 @@ Para uma visão mais imersiva do projeto, confira nossos protótipos e veja como
 ## 💡 Dicas Adicionais
 
 - **Verifique o URL**: Certifique-se de que o endereço digitado está correto para evitar erros ao acessar o site.
-- **Certificados de Segurança**: Verifique se o site está usando **HTTPS** (um cadeado verde geralmente aparece à esquerda do URL) para garantir que a navegação é segura.
-- **Limpeza de Cache**: Caso você enfrente problemas ao acessar o site, tentar limpar o cache do navegador pode ajudar.
-- **Suporte Técnico**: Se tiver problemas, entre em contato com o suporte técnico do site para orientações adicionais.
 
 
 ## 📸 Capturas de Tela e Backlog (Trello)  
@@ -353,7 +367,7 @@ Acompanhe nosso progresso diretamente nas ferramentas de gestão de projetos:
   ![backlog](https://github.com/user-attachments/assets/2a748d86-6a82-4d64-989b-53a576fe3ef8)
 
 ## 📚 Sketches e Storyboards  
-Acompanhe o desenvolvimento do projeto com os sketches e storyboards das funcionalidades em andamento: [Figma](https://www.figma.com/proto/fNpzjR1EqV8dfAkAnqauC4/SAGE?node-id=16-283&p=f&t=MnvjLIMUqd6eujuW-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1), [Link do Screencast](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view), [Link do Site] (https://projeto-sage-pearl.vercel.app/fechar-os/ma4etlgiukpoi), [Screencast do Site] (https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view?usp=drive_link)
+Acompanhe o desenvolvimento do projeto com os sketches e storyboards das funcionalidades em andamento: [Figma](https://www.figma.com/proto/fNpzjR1EqV8dfAkAnqauC4/SAGE?node-id=16-283&p=f&t=MnvjLIMUqd6eujuW-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1), [Link do Screencast](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view), [Link do Site](https://projeto-sage-pearl.vercel.app/fechar-os/ma4etlgiukpoi), [Screencast do Site](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view?usp=drive_link)
   
 - **História 1**: Autenticação e Definição de Perfil (MINUTAGEM: 00:52-01:06; 02:48-03:38)  
 - **História 2**: Visualização de Dashboard (MINUTAGEM: 01:06-01:15; 03:38-04:16; 04:47-05:50; 06:18-06:48)  
@@ -381,7 +395,7 @@ Acompanhe o desenvolvimento do projeto com os sketches e storyboards das funcion
 Assista ao vídeo do protótipo para ver como o sistema funciona e entender como ele pode beneficiar a gestão de equipamentos hospitalares:
 
 - [Screencast do Protótipo](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view)
-- [Screencast do Site] (https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view?usp=drive_link)
+- [Screencast do Site](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view?usp=drive_link)
 
 ### 1. TIME STAMP
 
