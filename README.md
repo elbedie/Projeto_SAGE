@@ -360,7 +360,8 @@ Assista ao vídeo do protótipo para ver como o sistema funciona e entender como
 
 Acesse o nosso diagramas de atividade do Projeto SAGE [aqui](https://www.canva.com/design/DAGl3NLtZCU/LMaEQjuhNSR8kIqoEzb_eQ/edit)!
 
-![diagrama de atividades sage](https://drive.google.com/file/d/1XIMGHmWX8XGRcyFyhbIY2kNLohys-7yb/view?usp=drive_link)
+![diagrama de atividades sage](https://github.com/user-attachments/assets/27f3afce-a9c7-44d6-a610-5aec15e46f7d)
+)
 
 ---
 
