@@ -46,7 +46,7 @@ Utilizamos a metodologia MoSCoW para priorizar as funcionalidades de **SAGE**, g
 - 🤖 **Inteligência Artificial para Previsão de Falhas**  
 
 ## 🧑‍💻 Histórias de Usuário 
-[Screencast](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view), [Link do Site](https://projeto-sage-pearl.vercel.app/fechar-os/ma4etlgiukpoi), [Screencast do Site](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view?usp=drive_link)
+[Screencast](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view), [Link do Site](https://projeto-sage-pearl.vercel.app/), [Screencast do Site](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view?usp=drive_link)
 
 - ### 1. **Autenticação e Definição de Perfil**  
 **Conversa com o P.O:**  
