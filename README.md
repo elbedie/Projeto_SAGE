@@ -368,7 +368,10 @@ Acompanhe nosso progresso diretamente nas ferramentas de gestão de projetos:
 
 - **Quadro e Backlog (Trello)**  
   - **Sprint 1**:
-  ![backlog](https://github.com/user-attachments/assets/2a748d86-6a82-4d64-989b-53a576fe3ef8)
+  ![sprint 1](https://github.com/user-attachments/assets/2a748d86-6a82-4d64-989b-53a576fe3ef8)
+- **Sprint 2 e 3**:
+  ![sprint 2](https://github.com/user-attachments/assets/1bc1c86d-0896-4bbe-a784-ce63bc10679a)
+
 
 ## 📚 Sketches e Storyboards  
 Acompanhe o desenvolvimento do projeto com os sketches e storyboards das funcionalidades em andamento: [Figma](https://www.figma.com/proto/fNpzjR1EqV8dfAkAnqauC4/SAGE?node-id=16-283&p=f&t=MnvjLIMUqd6eujuW-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1), [Link do Screencast](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view), [Link do Site](https://projeto-sage-pearl.vercel.app/fechar-os/ma4etlgiukpoi), [Screencast do Site](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view?usp=drive_link)
