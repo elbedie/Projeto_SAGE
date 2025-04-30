@@ -206,8 +206,8 @@ export default function DashboardPage() {
               <div><b>Data da solicitação:</b> {detalhes.data}</div>
               <div><b>Descrição:</b> {detalhes.descricao || "Sem descrição."}</div>
               <div className="modal-actions">
-                <button className="botao-acao vermelho" onClick={fecharModal}>Fechar</button>
                 <button className="botao-acao verde" onClick={() => window.location = '/abrir-os'}>Abrir O.S.</button>
+                <button className="botao-acao vermelho" onClick={fecharModal}>Fechar</button>
               </div>
             </div>
           </div>
