@@ -119,7 +119,24 @@ export default function ServicosAgendadosPage() {
         <nav className="admin-menu">
           <ul>
             <li onClick={() => navigate("/dashboard-admin")}>
-              <span role="img" aria-label="contratos">📄</span>Contratos
+            <span aria-label="início" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#75809C"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    style={{ display: 'block' }}
+                    aria-hidden="true"
+                >
+                    <path d="M3 12L12 5l9 7" />
+                    <path d="M5 10v8a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-4h2v4a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-8" />
+                </svg>
+                </span>
+              Home
             </li>
             <li onClick={() => navigate("/adicionar-contrato")}>
               <span role="img" aria-label="addcontrato">＋</span>Adicionar Contrato
