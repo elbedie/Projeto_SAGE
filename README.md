@@ -46,7 +46,7 @@ Utilizamos a metodologia MoSCoW para priorizar as funcionalidades de **SAGE**, g
 - 🤖 **Inteligência Artificial para Previsão de Falhas**  
 
 ## 🧑‍💻 Histórias de Usuário 
-[Screencast](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view)
+[Screencast](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view), [Link do Site](https://projeto-sage-pearl.vercel.app/), [Screencast do Site](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view?usp=drive_link)
 
 - ### 1. **Autenticação e Definição de Perfil**  
 **Conversa com o P.O:**  
@@ -63,11 +63,17 @@ Como usuário do sistema, quero fazer login de forma segura e escolher meu perfi
 - Deve haver opção de recuperação de senha.
 - O sistema adapta a interface conforme o perfil do usuário (Gestor, Técnico, Administrador).
 - 
-**Time Stamp:** 00:00-00:28  
+**Time Stamp:** 00:52-01:06
 **Figma Time Stamp:** 02:48-03:38
   
 **Implementação no protótipo:**
 ![image](https://github.com/user-attachments/assets/97d60a62-5d38-4bce-9f1c-30e13ffabd94)
+
+**Time Stamp:** 00:00-00:28
+
+**Implementação no site:**
+![image](https://github.com/user-attachments/assets/bdb0cadc-7da3-4914-855a-87686af44a48)
+
 
 ---
 
@@ -86,13 +92,19 @@ Como gestor hospitalar, quero ver um painel de controle com status dos equipamen
 - Incluir indicadores visuais de criticidade.
 - Permitir filtros por período e tipo de manutenção.
 
-**Time Stamp:** 00:28-01:23  
+**Time Stamp:** 01:06-01:15 
 **Figma Time Stamp:** 03:38-04:16; 04:47-05:50; 06:18-06:48
 
 **Implementação no protótipo:**
 ![image](https://github.com/user-attachments/assets/0d4e5bf6-8137-47f0-94e6-a58c182367e3)
 ![image](https://github.com/user-attachments/assets/363e0d90-8e49-40a6-b8c6-050b4cd0203e)
 ![image](https://github.com/user-attachments/assets/8381bd9f-2dc8-4cbc-94f5-61d5b7d0f2db)
+
+**Time Stamp:** 00:28-01:23 
+
+**Implementação no site:**
+![image](https://github.com/user-attachments/assets/d79fd30f-8833-409c-935a-fb6d61b6a801)
+
 
 ---
 
@@ -130,12 +142,19 @@ Como técnico de manutenção, quero abrir uma O.S. rapidamente, para garantir q
 - Definir prioridade da O.S. (Baixa, Média, Alta).
 - Atribuir técnico responsável.
 
-**Time Stamp:**  01:24-01:55  
+**Time Stamp:**  01:23-01:30  
 **Figma Time Stamp:** 04:16-04:46; 06:48-07:48
 
 **Implementação no protótipo:**
 ![image](https://github.com/user-attachments/assets/bc4c5267-3046-4ce4-9c66-3bf91961e82a)
 ![image](https://github.com/user-attachments/assets/544e939c-1ba4-4dcd-ad8a-5984a27a3494)
+
+**Time Stamp:** 01:24-01:55
+
+**Implementação no site:**
+![PRINT abrir o s 1](https://github.com/user-attachments/assets/9c68a33b-b77b-4bf8-b63e-8c8e80791d5b)
+![PRINT O S 2](https://github.com/user-attachments/assets/fa2f6a86-0cf6-441d-98ac-d6cfb1a20b69)
+
 
 ---
 
@@ -154,11 +173,17 @@ Como técnico de manutenção, quero registrar detalhes da O.S. ao encerrá-la, 
 - Registrar peças substituídas e tempo gasto.
 - Gerar relatório automático da intervenção.
 
-**Time Stamp:**  01:55-03:08  
+**Time Stamp:**  01:30-01:38 
 **Figma Time Stamp:** 07:48-08:35
 
 **Implementação no protótipo:**
 ![image](https://github.com/user-attachments/assets/130016b9-d43e-438f-8dd9-d730f8a31b4e)
+
+**Time Stamp:** 01:55-03:08 
+
+**Implementação no site:**
+![print fechar os 1](https://github.com/user-attachments/assets/892b3701-04d1-45f3-8710-ed87cf717228)
+![print fechar os 2](https://github.com/user-attachments/assets/25825f7a-c4f0-4d47-9ba8-e2930d74c99d)
 
 ---
 
@@ -301,17 +326,55 @@ Como técnico de manutenção, quero acessar um histórico detalhado de todas as
 Para uma visão mais imersiva do projeto, confira nossos protótipos e veja como **SAGE** vai revolucionar a gestão de equipamentos hospitalares:
 
 - **Protótipos Lo-Fi** disponíveis no [Figma](https://www.figma.com/proto/fNpzjR1EqV8dfAkAnqauC4/SAGE?node-id=16-283&p=f&t=MnvjLIMUqd6eujuW-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1)
-- **Screencast** para explicar e visualizar o protótipo em desenvolvimento [Link do Screencast](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view)
+- **Screencast** para explicar e visualizar o protótipo em desenvolvimento [Link do Screencast](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view), [Screencast do Site](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view?usp=drive_link)
+- **Implementação** para visualizar as funcionalidades implementadas. Instruções de acesso: Clique no link, realize o login e explore o sistema! [Link do Site](https://projeto-sage-pearl.vercel.app/fechar-os/ma4etlgiukpoi)
+  # Instruções para Acessar o Site
+
+1. **Abra seu Navegador de Internet:**
+   - Se você ainda não tiver um navegador aberto, abra um dos seguintes navegadores no seu computador ou dispositivo:
+     - **Google Chrome**
+     - **Mozilla Firefox**
+     - **Microsoft Edge**
+     - **Safari** (para Mac)
+
+2. **Digite o Endereço do Site:**
+   - Na barra de endereços do navegador (onde normalmente aparece "www" ou o link do site), digite o **URL** completo do site. Exemplo:
+     - `https://projeto-sage-pearl.vercel.app`
+   
+3. **Acesse o Site:**
+   - Após digitar o URL, pressione a tecla **Enter** ou **Return** no teclado.
+   - O navegador irá carregá-lo automaticamente para a página inicial do site.
+
+4. **Login:**
+   - Você será redirecionado para uma página de autenticação.
+   - Insira **seu e-mail** e **senha** cadastrados no site.
+
+5. **Navegue pelo Site:**
+   - Utilize o menu de navegação (geralmente no topo ou na lateral da página) para acessar diferentes áreas do site.
+
+6. **Verifique a Conexão:**
+   - Se a página não carregar, verifique sua conexão com a internet.
+   - Se o site estiver fora do ar, você pode tentar acessá-lo mais tarde.
+
+---
+
+## 💡 Dicas Adicionais
+
+- **Verifique o URL**: Certifique-se de que o endereço digitado está correto para evitar erros ao acessar o site.
+
 
 ## 📸 Capturas de Tela e Backlog (Trello)  
 Acompanhe nosso progresso diretamente nas ferramentas de gestão de projetos:
 
 - **Quadro e Backlog (Trello)**  
   - **Sprint 1**:
-  ![backlog](https://github.com/user-attachments/assets/2a748d86-6a82-4d64-989b-53a576fe3ef8)
+  ![sprint 1](https://github.com/user-attachments/assets/2a748d86-6a82-4d64-989b-53a576fe3ef8)
+- **Sprint 2 e 3**:
+  ![sprint 2](https://github.com/user-attachments/assets/1bc1c86d-0896-4bbe-a784-ce63bc10679a)
+
 
 ## 📚 Sketches e Storyboards  
-Acompanhe o desenvolvimento do projeto com os sketches e storyboards das funcionalidades em andamento: [Figma](https://www.figma.com/proto/fNpzjR1EqV8dfAkAnqauC4/SAGE?node-id=16-283&p=f&t=MnvjLIMUqd6eujuW-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1), [Link do Screencast](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view)
+Acompanhe o desenvolvimento do projeto com os sketches e storyboards das funcionalidades em andamento: [Figma](https://www.figma.com/proto/fNpzjR1EqV8dfAkAnqauC4/SAGE?node-id=16-283&p=f&t=MnvjLIMUqd6eujuW-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1), [Link do Screencast](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view), [Link do Site](https://projeto-sage-pearl.vercel.app/fechar-os/ma4etlgiukpoi), [Screencast do Site](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view?usp=drive_link)
   
 - **História 1**: Autenticação e Definição de Perfil (MINUTAGEM: 00:52-01:06; 02:48-03:38)  
 - **História 2**: Visualização de Dashboard (MINUTAGEM: 01:06-01:15; 03:38-04:16; 04:47-05:50; 06:18-06:48)  
@@ -319,10 +382,27 @@ Acompanhe o desenvolvimento do projeto com os sketches e storyboards das funcion
 - **História 5**: Fechamento de Ordem de Serviço com Relatório (MINUTAGEM: 01:30-01:38; 07:48-08:35)
 - **História 6**: Controle de Contratos (MINUTAGEM: 01:38-01:46; 05:50-06:17)
 
-## 🎥 Screencast do Protótipo  
+  **Figma**
+
+- **HU 1 (Autenticação e Definição de Perfil)**: 02:48-03:38  
+- **HU 2 (Visualização de Dashboard)**: 03:38-04:16; 04:47-05:50; 06:18-06:48  
+- **HU 4 (Abertura de Ordem de Serviço (O.S.))**: 04:16-04:46; 06:48-07:48  
+- **HU 5 (Fechamento de Ordem de Serviço com Relatório)**: 07:48-08:35  
+- **HU 6 (Controle de Contratos)**: 05:50-06:17
+
+**Protótipo do Site**
+
+- **Login (Autenticação e Definição de Perfil):  00:00-00:28**
+- **Dashboard Eng Clínico (Visualização de Dashboard): 00:28-01:23**
+- **Abrir O.S (Abertura de Ordem de Serviço (O.S.)):  01:24-01:55**
+- **Fechar O.S (Fechamento de Ordem de Serviço com Relatório): 01:55-03:08**
+
+
+## 🎥 Screencasts 
 Assista ao vídeo do protótipo para ver como o sistema funciona e entender como ele pode beneficiar a gestão de equipamentos hospitalares:
 
 - [Screencast do Protótipo](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view)
+- [Screencast do Site](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view?usp=drive_link)
 
 ### 1. TIME STAMP
 
@@ -351,16 +431,89 @@ Assista ao vídeo do protótipo para ver como o sistema funciona e entender como
 
 **Protótipo do Site**
 
-- Login (Autenticação e Definição de Perfil):  00:00-00:28
-- Dashboard Eng Clínico (Visualização de Dashboard): 00:28-01:23
-- Abrir O.S (Abertura de Ordem de Serviço (O.S.)):  01:24-01:55
-- Fechar O.S (Fechamento de Ordem de Serviço com Relatório): 01:55-03:08
+- **Login (Autenticação e Definição de Perfil):  00:00-00:28**
+- **Dashboard Eng Clínico (Visualização de Dashboard): 00:28-01:23**
+- **Abrir O.S (Abertura de Ordem de Serviço (O.S.)):  01:24-01:55**
+- **Fechar O.S (Fechamento de Ordem de Serviço com Relatório): 01:55-03:08**
 
 ## Diagrama de Atividades
 
 Acesse o nosso diagrama de atividade do Projeto SAGE através deste [link](https://www.canva.com/design/DAGl3NLtZCU/LMaEQjuhNSR8kIqoEzb_eQ/edit).
 
-![diagrama de atividades sage](https://github.com/user-attachments/assets/27f3afce-a9c7-44d6-a610-5aec15e46f7d)
+![image](https://github.com/user-attachments/assets/3d72fe5d-e5f4-4e7b-b939-8d0d95f5f594)
+
+## Relatório de Programação em Pares
+
+### Funcionalidades Implementadas:
+- **Autenticação com login (e-mail/senha)**
+- **Visualização de Dashboard (engenheiro Clínico)**
+- **Abertura de Ordem de Serviço (O.S.)**
+- **Fechamento de O.S.**
+  
+
+### 🎯 Objetivo da Programação em Pares
+
+A **Programação em Pares** (ou **Pair Programming**) é uma prática ágil onde duas pessoas trabalham juntas na mesma tarefa, com foco em colaboração contínua, revisão em tempo real e melhoria da qualidade do código. Um parceiro atua como o "piloto" (codifica) e o outro como o "navegador" (revisa, dá ideias e antecipa problemas).
+
+Em nosso projeto **React**, essa abordagem foi usada para:
+
+- Garantia de boas práticas em **React**, como separação de responsabilidades e reaproveitamento de componentes.
+- Detecção imediata de bugs ou comportamentos inesperados.
+
+
+
+### ⚙️ Como Aplicamos no Projeto
+
+| **Funcionalidade**               | **Foco da Programação em Pares**                                                                                                                                  |
+|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Login com e-mail/senha**        | Definição de fluxos de navegação com **React Router**. Validação de formulário e UX. O navegador verificou o cumprimento dos requisitos de validação.              |
+| **Dashboard do Engenheiro**       | Construção de layout com componentes reutilizáveis. Implementação de filtros e cards. O navegador deu sugestão de mudanças para melhorar a interface.               |
+| **Abertura de O.S.**              | Criação de formulários com gerenciamento de estado local e uso de componentes controlados. O navegador sugeriu melhorias no fluxo, evitando confusão.              |
+| **Fechamento de O.S.**            | Implementação de múltiplos campos (peças, tempo, descrição). Otimização de reatividade. O navegador sugeriu melhorias visuais e de campos essenciais.               |
+
+
+
+### ✅ Benefícios Observados
+
+- **Melhoria na qualidade do código**: erros foram detectados e corrigidos durante o desenvolvimento.
+- **Aprendizado mútuo**: compartilhamos conhecimento técnico sobre autenticação, manipulação de estados no front-end e regras de negócio.
+- **Redução de retrabalho**: decisões foram tomadas em conjunto, evitando mal-entendidos de requisitos.
+- **Alinhamento com o backlog do cliente**: foco constante no que era prioritário, com base no que foi definido.
+
+
+
+### 🚧 Desafios Enfrentados
+
+- **Sincronização de horários**: foi necessário ajustar as agendas para garantir que os pares pudessem trabalhar juntos.
+- **Cansaço mental**: sessões prolongadas exigem pausas regulares para manter a produtividade e concentração.
+
+
+
+### 📈 Considerações Finais
+
+A prática de **programação em pares** foi essencial para garantir a entrega de funcionalidades com qualidade e de acordo com o que foi priorizado pelo cliente. A combinação de revisão constante, troca de conhecimentos e tomada de decisão conjunta fortaleceu o desenvolvimento colaborativo e alinhado aos objetivos do projeto.
+
+![image](https://github.com/user-attachments/assets/c8aba428-507a-42d6-bff1-dc2b8aef72ad)
+![image](https://github.com/user-attachments/assets/6990909c-8381-4490-8442-0f588cf80e02)
+
+### Bug Tracker
+
+**1. Erro na Rota de Abrir OS:**
+![erro404](https://github.com/user-attachments/assets/3d8be60a-eb0f-4667-afec-cb6b375caf0c)
+
+- Descrição: Ao acessar a URL https://projeto-sage-pearl.vercel.app/abrir-os resultou em erro 404, ou seja, é uma rota inexistente dentro do projeto.
+- Causa: Descobrimos que, em ambientes como o Vercel, quando o usuário atualiza a página manualmente ou acessa diretamente uma rota específica, o servidor tenta buscar um arquivo físico correspondente à URL, o servidor responde com 404.
+- Solução: Adicionamos um arquivo vercel.json na raiz do projeto:
+  <pre> ```json { "rewrites": [ { "source": "/(.*)", "destination": "/" } ] } ``` </pre>
+  Com isso, todas as requisições desconhecidas são redirecionadas para o index.html, permitindo que o React Router tome o controle e renderize corretamente a rota solicitada
+
+**2. Caminho Mal Definido na Rota**
+![erro-rota](https://github.com/user-attachments/assets/93bb54e1-f183-4904-a95b-ea2ef22099db)
+
+- Descrição: Durante o processo de desenvolvimento, o terminal exibia uma mensagem de erro indicando falha ao compilar o projeto. O erro estava relacionado à tentativa de acessar uma rota não definida.
+- Causa: Identificamos que o erro estava sendo causado por uma importação malformada em um dos arquivos .js. O caminho informado não havia sido definido no arquivo de rotas. 
+- Solução: Foi feita uma revisão nas declarações de import e o caminho do arquivo foi corrigido para refletir a nova estrutura de diretórios. Após o ajuste, o projeto compilou normalmente sem erros.
+
 
 ---
 
