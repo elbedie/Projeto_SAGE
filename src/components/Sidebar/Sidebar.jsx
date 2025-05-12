@@ -34,26 +34,32 @@ const Sidebar = ({ perfil, nomeUser }) => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              marginBottom: 10
+              marginBottom: 10,
+              overflow: "hidden", // importante para o círculo funcionar
             }}
           >
-            <svg width="38" height="38" viewBox="0 0 24 24" fill="#75809c" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="12" cy="8" r="4.5" />
-              <path d="M4 20c0-3.5 3.4-6 8-6s8 2.5 8 6v1H4v-1z" />
-            </svg>
+            <img
+              src="https://randomuser.me/api/portraits/men/75.jpg"
+              alt="Random User"
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover"
+              }}
+            />
           </div>
           {/* Nome e cargo */}
           <div style={{ fontWeight: "600", fontSize: 18, marginBottom: 2 }}>{nomeUser}</div>
           <div style={{ fontSize: 13, marginBottom: 18, color: "#b0b6c4" }}>Engenheiro Clínico</div>
           {/* Menu */}
           <button className="sb-btn" onClick={() => navigate("/dashboard")}>
-            <FaClipboardList />Solicitações
+          <span role="img" aria-label="inventario">🧾</span>Solicitações
           </button>
           <button className="sb-btn" onClick={() => navigate("/fechamento-os")}>
             <FaWrench />Fechamento de O.S.
           </button>
           <button className="sb-btn" onClick={() => navigate("/relatorios")}>
-            <FaClipboardList />Relatórios
+          <span role="img" aria-label="contratos">📄</span>Relatórios
           </button>
         </div>
       </div>

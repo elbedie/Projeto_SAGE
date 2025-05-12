@@ -1,0 +1,530 @@
+body {
+    font-family: 'Inter', 'Montserrat', Arial, sans-serif;
+    background: linear-gradient(115deg,#f6f8fb 60%, #eaeff6 115%);
+    margin: 0;
+}
+
+.admin-bg {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* -------- SIDEBAR -------- */
+.admin-sidebar {
+    width: 270px;
+    background: #232e44;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 42px;
+    padding-bottom: 0;
+    min-height: 100vh;
+}
+
+.admin-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 34px;
+    width: 90%;
+}
+.admin-profile img {
+    width: 88px;
+    height: 88px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 2px 8px #21355a20;
+}
+.admin-profile h3 {
+    color: #fff;
+    font-size: 1.09rem;
+    font-weight: 700;
+    margin: 18px 0 2px 0;
+    letter-spacing: 0.4px;
+}
+.admin-profile span {
+    color: #dde5f4;
+    font-size: 0.98rem;
+    font-weight: 400;
+}
+
+.admin-menu {
+    width: 100%;
+}
+.admin-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.admin-menu ul li {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 14px 0 14px 36px;
+    color: #eef3fb;
+    font-size: 1.09rem;
+    font-weight: 500;
+    cursor: pointer;
+    border-left: 4px solid transparent;
+    border-radius: 0 16px 16px 0;
+    transition: background 0.16s, color 0.16s, padding 0.16s;
+}
+.admin-menu ul li:hover,
+.admin-menu ul li.active {
+    background: #273355;
+    border-left: 4px solid #36456d;
+    color: #d1c5c5;
+    padding-left: 30px;
+}
+
+.sidebar-logout-btn {
+    margin-top: 25rem;
+    margin-bottom: 38px;
+    width: 86%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(37, 53, 86);
+    color: #fff;
+    border: none;
+    border-radius: 9px;
+    font-size: 1.09rem;
+    font-weight: 600;
+    padding: 13px 0;
+    letter-spacing: 0.37px;
+    gap: 8px;
+    box-shadow: 0 2px 10px #bf446629;
+    cursor: pointer;
+    transition: background 0.13s, color 0.09s, transform 0.08s;
+}
+.sidebar-logout-btn:hover {
+    background: #be2c48;
+    color: #fffbe7;
+    transform: scale(1.03) translateY(-2px);
+}
+
+/* -------- MAIN -------- */
+.admin-main {
+    flex: 1;
+    background: linear-gradient(115deg,#f5f9fe 50%, #e2eaf6 115%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 12px 12px 0;
+    padding: 45px 0 50px 0;
+    min-height: 100vh;
+}
+
+.admin-content {
+    width: 97%;
+    max-width: 950px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* ------------ CONTRATOS & INVENTÁRIO CARD ----------- */
+
+.admin-section-card {
+    background: #fff;
+    border-radius: 12px;
+    border: 1.5px solid #e7eaf2;
+    box-shadow: 0 2px 20px #23324a09;
+    padding: 0 0 13px 0;
+    margin-bottom: 12px;
+    transition: box-shadow 0.14s;
+}
+.admin-section-card:hover {
+    box-shadow: 0 7px 24px #25508819;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.09rem;
+    font-weight: 800;
+    padding: 15px 24px 0 24px;
+    background: transparent;
+    color: #35568c;
+    border-radius: 12px 12px 0 0;
+    letter-spacing: 0.17em;
+}
+.card-header strong {
+    font-weight: 900;
+}
+.card-header .btn-small {
+    background: #f05870;
+    color: #fff;
+    border: none;
+    font-size: 1em;
+    border-radius: 7px;
+    padding: 6px 16px;
+    margin-left: auto;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 8px #db305437;
+    transition: background 0.14s, transform 0.13s;
+}
+.card-header .btn-small:hover {
+    background: #c72744;
+    transform: scale(1.06);
+}
+
+.card-lines {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 17px 32px 21px 32px;
+}
+.card-lines .card-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #243b61;
+    font-size: 1.07rem;
+    font-weight: 500;
+    border-bottom: 1px solid #f4f6fa;
+    padding-bottom: 6px;
+}
+.card-lines .card-line:last-child {
+    border-bottom: none;
+}
+.card-lines .card-line button {
+    background: #e4f1fa;
+    color: #14557b;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.01rem;
+    font-weight: 700;
+    padding: 7px 17px;
+    margin-left: 14px;
+    box-shadow: 0 1.2px 6px #14557b1a;
+    cursor: pointer;
+    transition: background 0.13s, color 0.13s, box-shadow 0.12s;
+}
+.card-lines .card-line button:hover {
+    background: #b6e4fa;
+    color: #0e3757;
+    box-shadow: 0 3px 7px #14557b17;
+}
+
+/* --------------- TABELA INVENTÁRIO ---------------- */
+.admin-table { 
+    width: 97.5%;
+    margin: 0 auto 13px auto;
+    border-collapse: separate;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 11px;
+}
+.admin-table th, .admin-table td {
+    text-align: center;
+    font-size: 1.04rem;
+    padding: 11px 0;
+}
+.admin-table th {
+    font-weight: 800;
+    background: #f5f7fc;
+    color: #285097;
+    border-bottom: 2.2px solid #e5e8ee;
+    letter-spacing: 0.09em;
+}
+.admin-table td {
+    color: #223048;
+    font-weight: 500;
+    border-bottom: 1.3px solid #f5f8fb;
+    background: #fff;
+}
+.admin-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* ------------- RESPONSIVO ------------- */
+@media (max-width: 990px) {
+    .admin-content { width: 99vw; }
+    .admin-section-card { width: 99vw; }
+    .admin-main { padding-left:8px; padding-right:8px;}
+    .card-lines { padding: 14px 5vw 14px 5vw; }
+}
+@media (max-width: 700px) {
+    .admin-sidebar { display: none; }
+    .admin-main { padding: 7px 0 30px 0 !important;}
+    .admin-section-card { padding: 4px 1vw; }
+    .card-lines { padding: 10px 2vw 13px 2vw; }
+}
+
+.modal-backdrop {
+    position: fixed;
+    top:0; left:0; right:0; bottom:0;
+    background: rgba(40,52,76,0.28);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .modal-content {
+    background: #fff;
+    border-radius: 13px;
+    box-shadow: 0 8px 32px #203a5a44;
+    padding: 42px 32px 32px 32px;
+    min-width: 320px;
+    max-width: 92vw;
+    max-height: 88vh;
+    overflow-y: auto;
+    position: relative;
+    text-align: left;
+  }
+  .modal-content h2 {
+    margin: 0 0 18px 0;
+    font-size: 1.37rem;
+    color: #243b61;
+    font-weight: 700;
+  }
+  .modal-list {
+    padding: 0;
+    margin: 0 0 22px 0;
+    list-style: none;
+  }
+  .modal-list li {
+    margin-bottom: 7px;
+    color: #39518b;
+    font-size: 1.07rem;
+  }
+  .modal-close-btn {
+    background: linear-gradient(90deg, #ed5178 60%, #be2c48 120%);
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    padding: 9px 24px;
+    cursor: pointer;
+    box-shadow: 0 2px 10px #bf446629;
+    transition: background 0.13s;
+  }
+  .modal-close-btn:hover {
+    background: linear-gradient(90deg, #be2c48 75%, #e27b95 160%);
+  }
+
+  .form-contrato {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    padding: 24px 18px 12px 18px;
+    background: #fafdff;
+    border-radius: 10px;
+  }
+  
+  .form-contrato label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    color: #223048;
+    font-size: 1.05rem;
+    gap: 4px;
+  }
+  
+  .form-contrato input,
+  .form-contrato select {
+    padding: 9px 12px;
+    border: 1px solid #dde6f7;
+    border-radius: 7px;
+    font-size: 1.04rem;
+    font-family: inherit;
+    margin-top: 2px;
+    background: #fff;
+    color: #253750;
+    transition: border 0.14s;
+  }
+  
+  .form-contrato input:focus,
+  .form-contrato select:focus {
+    outline: none;
+    border: 1.5px solid #4577b5;
+    background: #f4f9fd;
+  }
+  
+  .btn-submit-contrato {
+    margin-top: 10px;
+    background: linear-gradient(90deg, #ed5178 60%, #be2c48 120%);
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    font-size: 1.09rem;
+    font-weight: 600;
+    padding: 11px 0;
+    cursor: pointer;
+    transition: background 0.14s;
+    box-shadow: 0 2px 9px #bf446629;
+  }
+  .btn-submit-contrato:hover {
+    background: linear-gradient(90deg, #be2c48 75%, #e27b95 160%);
+    color: #fffbe6;
+  }
+  .msg-sucesso {
+    background: #daf4e0;
+    color: #17865c;
+    border-radius: 5px;
+    padding: 9px 0 8px 0;
+    margin-top: 17px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: .01em;
+    font-size: 1.06rem;
+  }
+
+  .admin-menu a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    width: 100%;
+    height: 100%;
+  }
+  .admin-menu li.active a {
+    color: #d8d4cb; /* ou a cor do 'active' desejada */
+  }
+  
+  .paginacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 24px 0 8px 0;
+    font-family: inherit;
+  }
+  
+  .paginacao-btn,
+  .paginacao-num {
+    background: transparent;
+    color: #35568c;
+    border: 1.5px solid #e1e5ef;
+    font-size: 1.12rem;
+    font-weight: 500;
+    padding: 5px 13px;
+    margin: 0 1.5px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.12s, color 0.12s, border 0.12s;
+    box-shadow: none;
+  }
+  
+  .paginacao-btn[disabled] {
+    color: #b2bfd8;
+    border-color: #f0f1f5;
+    background: transparent;
+    cursor: not-allowed;
+  }
+  
+  .paginacao-num.ativo,
+  .paginacao-num:hover {
+    background: #f7fafd;
+    color: #ed5178;
+    border-color: #ed5178;
+  }
+  
+  .paginacao-btn:focus,
+  .paginacao-num:focus {
+    outline: none;
+    border-color: #be2c48;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 600px) {
+    .paginacao-btn, .paginacao-num { padding: 4px 8px; font-size: 0.99rem;}
+  }
+
+  .inventory-minimal input[type="text"] {
+    width: 98%;
+    font-size: 1.02rem;
+    border: 1px solid #cfd8ef;
+    border-radius: 5px;
+    padding: 7px 5px;
+    background: #f8fbff;
+    color: #26436b;
+    outline: none;
+    transition: border 0.12s;
+  }
+  .inventory-minimal input[type="text"]:focus {
+    border: 1.5px solid #ed5178;
+    background: #fbeff0;
+  }
+  .icon-btn {
+    background: none;
+    border: none;
+    color: #35568c;
+    font-size: 1.14rem;
+    margin-right: 5px;
+    padding: 3px 6px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    transition: background 0.10s, color 0.11s;
+  }
+  .icon-btn:last-child { margin-right: 0; }
+  .icon-btn.edit:hover   { color: #ed5178; background: #fff4f7; }
+  .icon-btn.del:hover    { color: #fff; background: #ed5178; }
+  .icon-btn.save         { color: #219443; }
+  .icon-btn.save:hover   { background: #daf4e0; color: #127632; }
+  .icon-btn.cancel:hover { background: #fff2f2; color: #ca2323; }
+  tr.editando td {
+    background: #f7f8fc !important;
+  }
+
+  .lembrete-servicos {
+    margin: 0 0 24px 0;
+    padding: 20px 26px 14px 26px;
+    background: #f5f8fb;
+    border: 1.2px solid #e2e9f4;
+    border-radius: 11px;
+    box-shadow: 0 2px 18px #a3c5ec19;
+    max-width: 540px;
+    width: 100%;
+  }
+  .lembrete-titulo {
+    color: #ed5178;
+    font-weight: 700;
+    font-size: 1.13rem;
+    display: inline-block;
+    margin-bottom: 8px;
+    letter-spacing: 0.04em;
+  }
+  .lembrete-servicos ul {
+    margin: 0 0 6px 0; padding: 0 0 0 15px;
+    list-style-type: disc;
+  }
+  .lembrete-servicos li {
+    font-size: 1.05rem;
+    color: #223048;
+    margin-bottom: 2px;
+    line-height: 1.5;
+  }
+  .lembrete-setor {
+    color: #35568c;
+    font-weight: 500;
+  }
+  .lembrete-botao {
+    margin-top: 7px;
+    background: none;
+    border: 1.2px solid #ed5178;
+    color: #ed5178;
+    font-weight: 600;
+    font-size: 0.99rem;
+    border-radius: 7px;
+    padding: 5px 18px;
+    cursor: pointer;
+    transition: background .13s, color .13s;
+  }
+  .lembrete-botao:hover {
+    background: #ed5178;
+    color: #fff;
+  }
+  @media (max-width: 700px) {
+    .lembrete-servicos { max-width: 99vw; padding: 13px 6vw 11px 6vw;}
+  }

@@ -17,8 +17,12 @@ export default function LoginPage() {
       return;
     }
     sessionStorage.setItem("perfil", perfil);
-    sessionStorage.setItem("nomeUser", user); // <-- Novo!
-    navigate("/dashboard");
+    sessionStorage.setItem("nomeUser", user);
+    if (perfil === "admin") {
+      navigate("/dashboard-admin");
+    } else {
+      navigate("/dashboard");
+    }
   }
 
   function handleRecuperarSenha() {
