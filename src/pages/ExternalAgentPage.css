@@ -1,0 +1,122 @@
+.agente-externo-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #2e3241 0%, #222538 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+.agente-externo-box {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(43,49,70, 0.23), 0 1.5px 6px 0 rgba(80,90,130,0.14);
+  padding: 46px 48px 38px 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 370px;
+  animation: fade-in 0.7s cubic-bezier(.19,1,.22,1);
+}
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(30px);}
+  to   { opacity: 1; transform: translateY(0);}
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  user-select: none;
+}
+.logo-title-label {
+  font-size: 2.4rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #222;
+  font-family: 'Poppins', 'Inter', Arial, sans-serif;
+}
+
+.box-title {
+  margin: 4px 0 38px 0;
+  font-size: 1.16rem;
+  letter-spacing: .8px;
+  color: #252849;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.options {
+  width: 100%;
+  margin-bottom: 34px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.option-btn {
+  background: #f7f8fa;
+  border: none;
+  display: flex;
+  align-items: center;
+  padding: 17px 24px 17px 20px;
+  border-radius: 12px;
+  font-size: 1.08rem;
+  font-weight: 500;
+  color: #193460;
+  gap: 16px;
+  transition: 
+      background .23s cubic-bezier(.67,.34,.96,1), 
+      box-shadow .19s cubic-bezier(.67,.34,.96,1), 
+      transform .13s;
+  cursor: pointer;
+  box-shadow: 0 1.5px 8.5px 0 rgba(60, 75, 120, 0.09);
+  outline: none;
+  border: 1.5px solid #f2f4fa;
+}
+.option-btn .option-icon {
+  font-size: 1.45rem;
+  color: #3b70d1;
+  flex-shrink: 0;
+  filter: drop-shadow(0 1px 1.5px #cbe1ff33);
+}
+.option-btn:hover, .option-btn:focus-visible {
+  background: #e8edfb;
+  color: #295ca9;
+  transform: translateY(-2px) scale(1.038);
+  box-shadow: 0 6px 22px 0 rgba(72, 96, 174, 0.11);
+  border-color: #d0daf2;
+}
+
+.botao-sair {
+  background: #ef4136;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.08rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6em;
+  padding: 11px 38px;
+  border-radius: 8px;
+  margin-top: 10px;
+  letter-spacing: 1.5px;
+  transition: background .13s, transform .13s;
+  cursor: pointer;
+  box-shadow: 0 2.5px 10px 0 rgba(190,50,40,0.09);
+}
+.botao-sair span {
+  font-weight: 600;
+  font-size: 1.05em;
+}
+.botao-sair svg {
+  font-size: 1.22em;
+}
+.botao-sair:hover, .botao-sair:focus-visible {
+  background: #cc352a;
+  transform: translateY(-2px) scale(1.03);
+}

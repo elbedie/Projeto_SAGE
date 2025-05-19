@@ -20,6 +20,9 @@ export default function LoginPage() {
     sessionStorage.setItem("nomeUser", user);
     if (perfil === "admin") {
       navigate("/dashboard-admin");
+    } 
+    else if (perfil === "tecnico") {
+      navigate("/agente-externo");
     } else {
       navigate("/dashboard");
     }
@@ -46,7 +49,7 @@ export default function LoginPage() {
         {/* Inputs com ícones */}
         <div className="input-icon">
           <FaUser className="input-icon-ico" />
-          <input type="text" placeholder="Usuário" value={user} onChange={e => setUser(e.target.value)} />
+          <input type="text" style={{ padding: "10px 12px 10px 40px" }} placeholder="Usuário" value={user} onChange={e => setUser(e.target.value)} />
         </div>
         <div className="input-icon">
           <FaLock className="input-icon-ico" />
