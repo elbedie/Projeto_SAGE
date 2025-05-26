@@ -1,30 +1,63 @@
 import React, { useState } from "react";
-import "./DashboardAdminPage.css";
 import { useNavigate } from "react-router-dom";
+import {
+  FiHome,
+  FiPlusCircle,
+  FiClipboard,
+  FiFileText,
+  FiCalendar,
+  FiLogOut,
+  FiBell,
+  FiAlertTriangle,
+  FiCheckCircle,
+  FiClock,
+  FiCircle
+} from "react-icons/fi";
+import "./DashboardAdminPage.css";
 
-const contratos = [
+// Contratos COM PENDÊNCIA
+const contratosPendencia = [
   {
     nome: "MINDRAY - Nº 0079/2025",
+    pendencia: "Vencimento de documento próximo",
     detalhes: {
       empresa: "Mindray",
       numero: "0079/2025",
       validade: "31/12/2025",
       valor: "R$ 25.000,00",
-      status: "Ativo"
+      status: "Pendente"
     }
   },
   {
     nome: "INSTRAMED - Nº 0078/2025",
+    pendencia: "Aguardando assinatura",
     detalhes: {
       empresa: "Instramed",
       numero: "0078/2025",
       validade: "01/11/2025",
       valor: "R$ 30.000,00",
-      status: "Ativo"
+      status: "Pendente"
     }
   }
 ];
-
+// Equipamentos COM PENDÊNCIA
+const equipamentosPendencia = [
+  {
+    setor: "Centro Cirúrgico",
+    equipamento: "Bisturi Elétrico",
+    marca: "Mindray",
+    modelo: "BM-400",
+    pendencia: "Manutenção preventiva atrasada"
+  },
+  {
+    setor: "UTI 7º andar",
+    equipamento: "Ventilador Pulmonar",
+    marca: "Instramed",
+    modelo: "VP-XL",
+    pendencia: "Calibração pendente"
+  }
+];
+// Serviços agendados
 const lembretesServicos = [
   {
     data: "2024-07-01",
@@ -46,14 +79,22 @@ const lembretesServicos = [
     setor: "Enfermaria 5º andar",
     equipamento: "Cardioversor",
     responsavel: "Enf. Bianca"
-  },
+  }
 ];
-
+// Agenda checklist - início como NÃO concluídas
+const tarefasHojeInit = [
+  { hora: "09:00", tarefa: "Verificar estoque de insumos do centro cirúrgico" },
+  { hora: "11:00", tarefa: "Reunião com equipe de engenharia clínica" },
+  { hora: "14:30", tarefa: "Receber fornecedor Mindray" },
+  { hora: "16:00", tarefa: "Atualizar relatórios de pendências" }
+];
 export default function DashboardAdminPage() {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedContrato, setSelectedContrato] = useState(null);
+  const [tarefas, setTarefas] = useState(
+    tarefasHojeInit.map(t => ({ ...t, feito: false }))
+  );
   const navigate = useNavigate();
-
   function handleOpenModal(contrato) {
     setSelectedContrato(contrato);
     setModalOpen(true);
@@ -62,8 +103,21 @@ export default function DashboardAdminPage() {
     setModalOpen(false);
     setSelectedContrato(null);
   }
-
+  // Toggle marcado/concluído
+  function toggleFeito(idx) {
+    setTarefas(tarefas =>
+      tarefas.map((t, i) =>
+        i === idx ? { ...t, feito: !t.feito } : t
+      )
+    );
+  }
+  // Data do dia
+  function dataHojeFormatada() {
+    const hoje = new Date();
+    return hoje.toLocaleDateString('pt-BR');
+  }
   return (
+    <>
     <div className="admin-bg">
       {/* Sidebar */}
       <aside className="admin-sidebar">
@@ -77,142 +131,190 @@ export default function DashboardAdminPage() {
         </div>
         <nav className="admin-menu">
           <ul>
-            <li onClick={() => navigate("/dashboard-admin")}>
-            <span aria-label="início" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <svg
-                    width="22"
-                    height="22"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="#75809C"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    style={{ display: 'block' }}
-                    aria-hidden="true"
-                >
-                    <path d="M3 12L12 5l9 7" />
-                    <path d="M5 10v8a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-4h2v4a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-8" />
-                </svg>
-                </span>
+            <li onClick={() => navigate("/dashboard-admin")} className="active">
+              <FiHome size={20} />
               Home
             </li>
             <li onClick={() => navigate("/adicionar-contrato")}>
-              <span role="img" aria-label="addcontrato">＋</span>
+              <FiPlusCircle size={20} />
               Adicionar Contrato
             </li>
             <li onClick={() => navigate("/inventario")}>
-              <span role="img" aria-label="inventario">🧾</span>
+              <FiClipboard size={20} />
               Inventário
             </li>
+            <li onClick={() => navigate("/contratos")}>
+              <FiFileText size={20} />
+              Contratos
+            </li>
             <li onClick={() => navigate("/servicos-agendados")}>
-              <span role="img" aria-label="agenda">📅</span>
+              <FiCalendar size={20} />
               Serviços Agendados
             </li>
           </ul>
         </nav>
-        <button className="sidebar-logout-btn" onClick={() => {
-          sessionStorage.clear();
-          window.location.href = "/";
-        }}>
-          <svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+        <button
+          className="sidebar-logout-btn"
+          onClick={() => {
+            sessionStorage.clear();
+            window.location.href = "/";
+          }}
+        >
+          <FiLogOut size={20} />
           Sair
         </button>
       </aside>
       {/* Main Content */}
-      <main className="admin-main">
+      <main className="admin-main" style={{ background: "#f7fafd" }}>
         <div className="admin-content">
-
-          {/* BLOCO LEMBRETE SERVIÇOS AGENDADOS */}
-          <div className="lembrete-servicos">
-            <span className="lembrete-titulo">🔔 Serviços Agendados</span>
-            <ul>
-              {lembretesServicos.map((srv, idx) => (
-                <li key={idx}>
-                  <b>{srv.data.split('-').reverse().join('/')}</b> às <b>{srv.hora}</b> &ndash; {srv.equipamento} (<span className="lembrete-setor">{srv.setor}</span>)
-                </li>
-              ))}
-            </ul>
-            <button className="lembrete-botao" onClick={() => navigate("/servicos-agendados")}>
-              Ver todos
-            </button>
-          </div>
-
-          {/* Cards de contratos */}
-          <section className="admin-section-card">
-            <div className="card-header">
-              <strong>Contratos</strong>
+          {/* Linha superior */}
+          <div className="dashboard-row-twin">
+            {/* Serviços agendados */}
+            <div className="card-min card-lembrete card-borda-lateral-lembretes">
+              <div className="card-min-header" style={{ color: "#de8d06" }}>
+                <FiBell size={17} style={{ marginRight: 8 }} />
+                Serviços Agendados
+              </div>
+              <ul className="card-lembrete-lista">
+                {lembretesServicos.map((srv, idx) => (
+                  <li key={idx}>
+                    <b>{srv.data.split("-").reverse().join("/")}</b> às <b>{srv.hora}</b> — {srv.equipamento} <br />
+                    <span className="lembrete-setor">{srv.setor}</span>
+                  </li>
+                ))}
+              </ul>
+              <button className="btn-outline-min" onClick={() => navigate("/servicos-agendados")}>
+                Ver todos
+              </button>
             </div>
-            <div className="card-lines">
-              {contratos.map((contrato, idx) => (
-                <div className="card-line" key={idx}>
-                  <span>{contrato.nome}</span>
-                  <button onClick={() => handleOpenModal(contrato)}>Ver Detalhes</button>
+            {/* Checklist da agenda */}
+            <div className="card-min card-agenda card-borda-lateral-agenda">
+              <div className="card-min-header" style={{ color: "#2285df" }}>
+                <FiClock size={16} style={{ marginRight: 8 }} />
+                Minha Agenda - {dataHojeFormatada()}
+              </div>
+              <ul className="card-agenda-lista checklist-agenda">
+                {tarefas.map((tarefa, idx) => (
+                  <li key={idx} className={tarefa.feito ? "concluida" : ""}>
+                    <button
+                      className="check-btn"
+                      aria-label={tarefa.feito ? "Desmarcar tarefa" : "Marcar tarefa como concluída"}
+                      onClick={() => toggleFeito(idx)}
+                      tabIndex={0}
+                    >
+                      {tarefa.feito ? (
+                        <FiCheckCircle className="checked" size={22} />
+                      ) : (
+                        <FiCircle className="unchecked" size={22} />
+                      )}
+                    </button>
+                    <span className="card-agenda-hora">{tarefa.hora}</span>
+                    <span className="card-agenda-tarefa">{tarefa.tarefa}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          {/* Linha inferior: pendências lado a lado */}
+          <div className="dashboard-row-twin">
+            {/* Lista de contratos com pendência */}
+            <section className="card-min card-pendencia">
+              <div className="card-min-header" style={{ color: "#cc182f" }}>
+                <FiAlertTriangle size={18} style={{ marginRight: 8 }} />
+                Contratos com Pendência
+              </div>
+              {contratosPendencia.length === 0 && (
+                <div className="card-pendencia-vazio">
+                  <FiCheckCircle style={{ color: "#19af22", marginRight: 8 }} />
+                    Sem contratos pendentes.
+                </div>
+              )}
+              {contratosPendencia.map((contrato, idx) => (
+                <div className="card-contrato-linha" key={idx}>
+                  <div style={{display: "flex", flexDirection:"column"}}>
+                    <span style={{fontWeight:700, color:"#223048"}}>{contrato.nome}</span>
+                    <span className="card-pendencia-alerta">{contrato.pendencia}</span>
+                  </div>
+                  <button className="btn-link-min" onClick={() => handleOpenModal(contrato)}>Ver Detalhes</button>
                 </div>
               ))}
-            </div>
-          </section>
-          {/* Cards inventário */}
-          <section className="admin-section-card">
-            <div className="card-header">
-              <span>Inventário</span>
-              <button className="btn-small" onClick={() => navigate("/inventario")}>Ver Inventário</button>
-            </div>
-            <table className="admin-table">
-              <thead>
-                <tr>
-                  <th>Setor</th>
-                  <th>Equipamento</th>
-                  <th>Marca</th>
-                  <th>Modelo</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Enfermaria 5º andar</td>
-                  <td>Monitor Multiparaméd.</td>
-                  <td>Mindray</td>
-                  <td>iPM 12</td>
-                </tr>
-                <tr>
-                  <td>Enfermaria 5º andar</td>
-                  <td>Cardioversor</td>
-                  <td>Instramed</td>
-                  <td>Dualmax</td>
-                </tr>
-                <tr>
-                  <td>Pediatria 2º andar</td>
-                  <td>Monitor Raio-X</td>
-                  <td>Acteon</td>
-                  <td>iPM 69</td>
-                </tr>
-                <tr>
-                  <td>UTI 7º andar</td>
-                  <td>Cardioversor</td>
-                  <td>Instramed</td>
-                  <td>R-X54</td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-        </div>
-      </main>
-      {/* MODAL */}
-      {modalOpen && selectedContrato && (
-        <div className="modal-backdrop" onClick={handleCloseModal}>
-          <div className="modal-content" onClick={e => e.stopPropagation()}>
-            <h2>{selectedContrato.nome}</h2>
-            <ul className="modal-list">
-              <li><b>Empresa:</b> {selectedContrato.detalhes.empresa}</li>
-              <li><b>Nº Contrato:</b> {selectedContrato.detalhes.numero}</li>
-              <li><b>Validade:</b> {selectedContrato.detalhes.validade}</li>
-              <li><b>Valor:</b> {selectedContrato.detalhes.valor}</li>
-              <li><b>Status:</b> {selectedContrato.detalhes.status}</li>
-            </ul>
-            <button className="modal-close-btn" onClick={handleCloseModal}>Fechar</button>
+            </section>
+            {/* Lista de equipamentos com pendência */}
+            <section className="card-min card-pendencia">
+              <div className="card-min-header" style={{ color: "#cc182f" }}>
+                <FiAlertTriangle size={18} style={{ marginRight: 8 }} />
+                Equipamentos com Pendência
+              </div>
+              {equipamentosPendencia.length === 0 && (
+                <div className="card-pendencia-vazio">
+                  <FiCheckCircle style={{ color: "#19af22", marginRight: 8 }} />
+                    Sem pendências em equipamentos.
+                </div>
+              )}
+              <table className="admin-table-min">
+                <thead>
+                  <tr>
+                    <th>Setor</th>
+                    <th>Equipamento</th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Pendência</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {equipamentosPendencia.map((item, idx) => (
+                    <tr key={idx}>
+                      <td>{item.setor}</td>
+                      <td>{item.equipamento}</td>
+                      <td>{item.marca}</td>
+                      <td>{item.modelo}</td>
+                      <td className="card-pendencia-alerta">{item.pendencia}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </section>
           </div>
         </div>
-      )}
+      </main>
     </div>
+
+    {/* MODAL CONTRATO FORA DA DIV admin-bg */}
+    {modalOpen && selectedContrato && (
+      <div className="modal-backdrop" onClick={handleCloseModal}>
+        <div className="modal-content contrato-modal" onClick={e => e.stopPropagation()}>
+          <div className="contrato-modal-head">
+            <FiFileText size={32} className="contrato-modal-icone" />
+            <span className="contrato-modal-titulo">{selectedContrato.nome}</span>
+          </div>
+          <div className="contrato-modal-info">
+            <div>
+              <div className="contrato-label">Empresa</div>
+              <div className="contrato-valor">{selectedContrato.detalhes.empresa}</div>
+            </div>
+            <div>
+              <div className="contrato-label">Nº Contrato</div>
+              <div className="contrato-valor">{selectedContrato.detalhes.numero}</div>
+            </div>
+            <div>
+              <div className="contrato-label">Validade</div>
+              <div className="contrato-valor">{selectedContrato.detalhes.validade}</div>
+            </div>
+            <div>
+              <div className="contrato-label">Valor</div>
+              <div className="contrato-valor">{selectedContrato.detalhes.valor}</div>
+            </div>
+            <div className="contrato-modal-status-row">
+              <div className="contrato-label">Status</div>
+              <span className={`contrato-status ${selectedContrato.detalhes.status === "Pendente" ? "pendente" : "aprovado"}`}>
+                {selectedContrato.detalhes.status}
+              </span>
+            </div>
+          </div>
+          <button className="modal-close-btn" onClick={handleCloseModal}>Fechar</button>
+        </div>
+      </div>
+    )}
+    </>
   );
 }

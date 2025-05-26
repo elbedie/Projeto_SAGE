@@ -1,0 +1,199 @@
+/* Corpo principal do form */
+.contract-form-corporate {
+  background: #fcfdff;
+  border-radius: 11px;
+  border: 1.7px solid #e2e5f1;
+  max-width: 700px;
+  margin: 54px auto 0 auto;
+  box-shadow: 0 4px 36px #3651771b;
+  padding: 0 0 24px 0;
+}
+
+.contract-form-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 32px 36px 8px 36px;
+  border-radius: 11px 11px 0 0;
+  background: #f8faff;
+  border-bottom: 1.3px solid #ecedf4;
+}
+.contract-form-title-row h1 {
+  font-size: 1.38rem;
+  color: #214169;
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: .01em;
+}
+.contract-form-subtitle {
+  color: #597197;
+  font-size: 1.01rem;
+  font-weight: 400;
+  margin-top: 2px;
+  display: block;
+}
+.contract-form-back {
+  background: #e1e6f6;
+  color: #4661ab;
+  border-radius: 6px;
+  padding: 5px 18px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+  border: 1.2px solid #d2d9ee;
+  transition: background .12s, color .12s;
+}
+.contract-form-back:hover {
+  background: #4661ab;
+  color: #fff;
+}
+
+/* Input alinhados em fileiras */
+.contract-form-fields {
+  padding: 24px 36px 0 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.form-row {
+  display: flex;
+  gap: 22px;
+  margin-bottom: 18px;
+}
+@media (max-width:700px) {
+  .contract-form-corporate { max-width: 100vw; padding: 0 1vw 9vw 1vw; }
+  .contract-form-title-row, .contract-form-fields {
+    padding: 13px 3vw 0 3vw;
+  }
+  .form-row { flex-direction: column; gap: 0; }
+}
+
+.form-field {
+  flex: 1 1 130px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 2px;
+}
+
+/* Labels mais sóbrios */
+.form-field label {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #334e65;
+  letter-spacing: 0.02em;
+  margin-bottom: 3px;
+}
+.form-field label span {
+  color: #be2c48;
+  font-size: 1em;
+  font-weight: 700;
+  margin-left: 2px;
+}
+
+.form-row {
+  display: flex;
+  gap: 18px;
+}
+.form-field {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.form-field select {
+  max-width: 170px;
+  min-width: 100px;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.form-field select[name="tipo"], .form-field select[name="status"] {
+  max-width: 165px;
+}
+
+/* Inputs/slelect modernos */
+.form-field input[type="text"],
+.form-field input[type="number"],
+.form-field input[type="date"],
+.form-field select,
+.form-field textarea {
+  border: 1.15px solid #d4dae7;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 9px 11px;
+  font-size: 1.04rem;
+  background: #f9fafd;
+  color: #253655;
+  font-family: inherit;
+  transition: border 0.15s, box-shadow 0.15s;
+}
+.form-field textarea {
+  resize: vertical;
+  min-height: 33px;
+  max-height: 72px;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  outline: none;
+  border: 1.5px solid #4661ab;
+  background: #f7faff;
+  box-shadow: 0 1.2px 7px #4661ab10;
+}
+
+/* File input modernizado */
+.form-field input[type="file"] {
+  background: none;
+  border: none;
+  font-size: .96rem;
+  color: #4661ab;
+  margin-top: 0;
+  padding-left: 0;
+}
+::-webkit-input-placeholder, ::placeholder {
+  color: #8da5ca;
+  opacity: 1;
+}
+.form-divisor {
+  border-bottom: 1.3px solid #e1e5f2;
+  margin: 18px 0 18px 0;
+}
+
+/* Botão corporativo */
+.contract-form-btn {
+  background: #e1e6f6;
+  color: #4661ab;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.11rem;
+  font-weight: 700;
+  padding: 13px 29px;
+  box-shadow: 0 2px 12px #4661ab19;
+  letter-spacing: 0.04em;
+  transition: background 0.14s, transform 0.13s;
+  outline: none;
+  cursor: pointer;
+}
+.contract-form-btn:hover, .contract-form-btn:focus {
+  background: linear-gradient(90deg, #29497c 0%, #213458 100%);
+  color: #eeeff7;
+  transform: translateY(-1.5px) scale(1.02);
+}
+
+/* Mensagem sucesso mais discreta */
+.contract-form-success {
+  color: #228358;
+  background: #e8f3ee;
+  border-radius: 5px;
+  padding: 7px 14px;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-left: 12px;
+  letter-spacing: 0.01em;
+}

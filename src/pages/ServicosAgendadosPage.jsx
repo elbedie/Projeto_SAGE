@@ -1,6 +1,19 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./DashboardAdminPage.css";
+import "./ServicosAgendadosPage.css";
+import {
+  FiHome,
+  FiPlusCircle,
+  FiClipboard,
+  FiFileText,
+  FiCalendar,
+  FiLogOut,
+  FiBell,
+  FiAlertTriangle,
+  FiCheckCircle,
+  FiClock,
+  FiCircle
+} from "react-icons/fi";
 
 const ITEMS_PER_PAGE = 6;
 const INITIAL_SERVICOS = [
@@ -119,33 +132,24 @@ export default function ServicosAgendadosPage() {
         <nav className="admin-menu">
           <ul>
             <li onClick={() => navigate("/dashboard-admin")}>
-            <span aria-label="início" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <svg
-                    width="22"
-                    height="22"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="#75809C"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    style={{ display: 'block' }}
-                    aria-hidden="true"
-                >
-                    <path d="M3 12L12 5l9 7" />
-                    <path d="M5 10v8a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-4h2v4a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-8" />
-                </svg>
-                </span>
+              <FiHome size={20} />
               Home
             </li>
             <li onClick={() => navigate("/adicionar-contrato")}>
-              <span role="img" aria-label="addcontrato">＋</span>Adicionar Contrato
+              <FiPlusCircle size={20} />
+              Adicionar Contrato
             </li>
             <li onClick={() => navigate("/inventario")}>
-              <span role="img" aria-label="inventario">🧾</span>Inventário
+              <FiClipboard size={20} />
+              Inventário
             </li>
-            <li className="active" onClick={() => navigate("/servicos-agendados")}>
-              <span role="img" aria-label="agenda">📅</span>Serviços Agendados
+            <li onClick={() => navigate("/contratos")}>
+              <FiFileText size={20} />
+              Contratos
+            </li>
+            <li onClick={() => navigate("/servicos-agendados")} className="active">
+              <FiCalendar size={20} />
+              Serviços Agendados
             </li>
           </ul>
         </nav>

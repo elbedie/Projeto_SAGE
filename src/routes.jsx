@@ -14,8 +14,7 @@ import ExternalAgentPage from "./pages/ExternalAgentPage";
 import SolicitarManutencaoPage from "./pages/SolicitarManutencaoPage";
 import AvaliarServicoPage from "./pages/AvaliarServicoPage";
 import SolicitarInstrucaoPage from "./pages/SolicitarInstrucaoPage";
-
-
+import ContratosPage from "./pages/ContratosPage";
 
 const routes = createBrowserRouter([
   { path: "/", element: <LoginPage /> },
@@ -33,6 +32,7 @@ const routes = createBrowserRouter([
   { path: "/agente-externo/solicitar-manutencao", element: <SolicitarManutencaoPage /> },
   { path: "/agente-externo/avaliar-servico", element: <AvaliarServicoPage /> },
   { path: "/agente-externo/solicitar-instrucao", element: <SolicitarInstrucaoPage /> },
+  { path: "/contratos", element: <ContratosPage /> }
 
 
 

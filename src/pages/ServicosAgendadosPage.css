@@ -1,0 +1,315 @@
+/* ServicosAgendadosPage.css */
+
+/* CORPORATE THEME PALLETTE */
+:root {
+  --cor-bg-main: #f6f8fb;
+  --cor-bg-card: #fff;
+  --cor-primary: #19406c;
+  --cor-secondary: #3173b6;
+  --cor-table-header: #f4f7fb;
+  --cor-table-border: #e2e9f3;
+  --cor-accent: #2e7ad9;
+  --cor-sidebar: #22304a;
+  --cor-sidebar-active: #245293;
+  --cor-sidebar-hover: #284d7c;
+  --cor-text-main: #25324d;
+  --cor-text-muted: #7d93b1;
+  --radius: 10px;
+  --shadow-card: 0 2px 24px #1a28512a;
+}
+
+/* ------ SIDEBAR ------ */
+.admin-sidebar {
+  background: var(--cor-sidebar);
+  color: #fff;
+  min-width:230px;
+  max-width:245px;
+  height: 100vh;
+  position: fixed;
+  left:0; top:0; bottom:0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+  box-shadow: 0 1px 18px #12203512;
+  padding-top:38px;
+}
+.admin-profile {
+  text-align: center;
+  margin-bottom: 32px;
+  width: 90%;
+}
+.admin-profile img {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  border: 3px solid #e4ecfa;
+  box-shadow: 0 2px 8px #23395d15;
+}
+.admin-profile h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #e2e8f6;
+  margin: 16px 0 0;
+}
+.admin-profile span {
+  font-size: 15px;
+  color: #90acd5;
+}
+.admin-menu {
+  margin-top: 12px;
+  width: 100%;
+}
+.admin-menu ul {
+  list-style: none;
+  padding: 0 0 0 0;
+  margin: 0;
+}
+.admin-menu ul li {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 14px 0 14px 38px;
+  font-size: 1.07rem;
+  font-weight: 500;
+  color: #cedffa;
+  cursor: pointer;
+  transition: background 0.14s, color 0.16s, padding 0.17s;
+  border-left: 3.5px solid transparent;
+  border-radius: 0 16px 16px 0;
+}
+.admin-menu ul li.active,
+.admin-menu ul li:hover {
+  background: #30446e;
+  color: #fff;
+  border-left: 3.5px solid var(--cor-accent);
+  padding-left: 30px;
+}
+.sidebar-logout-btn {
+  margin-top: auto;
+  margin-bottom: 3rem;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  background: #30446e;
+  color: #fff;
+  font-size: 1.07rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 7px;
+  padding: 12px 0;
+  cursor: pointer;
+  transition: background .14s;
+  box-shadow: 0 2px 10px #12203523;
+}
+.sidebar-logout-btn:hover {
+  background: #b73737;
+}
+
+/* ------ MAIN ------ */
+.admin-bg {
+  display: flex;
+  min-height: 100vh;
+  background: var(--cor-bg-main);
+}
+.admin-main {
+  flex: 1;
+  margin-left: 245px;
+  padding: 42px 0 50px 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.admin-content {
+  max-width: 1100px;
+  width: 94%;
+  margin: 0 auto;
+}
+.admin-section-card {
+  background: var(--cor-bg-card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+  padding: 28px 30px 20px 30px;
+  margin-bottom: 28px;
+  border: 1px solid #e3e9f5;
+}
+.card-header {
+  font-size: 1.29rem;
+  font-weight: 700;
+  color: var(--cor-primary);
+  letter-spacing: .03em;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ---------- TABELA ---------- */
+.admin-table {
+  border-collapse: separate;
+  width: 100%;
+  margin-bottom: 13px;
+  border-radius: 12px;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 2px 15px #17438009;
+  font-size: 1.07rem;
+}
+
+.admin-table th, .admin-table td {
+  text-align: center;
+  padding: 12px 5px;
+}
+.admin-table th {
+  background: var(--cor-table-header);
+  color: var(--cor-primary);
+  font-weight: 700;
+  font-size: 1.04rem;
+  border-bottom: 2px solid var(--cor-table-border);
+  letter-spacing: 0.01em;
+}
+.admin-table td {
+  color: var(--cor-text-main);
+  font-weight: 500;
+  border-bottom: 1.3px solid #eff3fa;
+  background: #fff;
+  transition: background .12s;
+  vertical-align: middle;
+}
+.admin-table tr {
+  transition: background .13s;
+}
+.admin-table tbody tr:hover {
+  background: #e4f1fc42;
+}
+
+.admin-table input {
+  width: 92%;
+  font-size: 1.03rem;
+  padding: 6px 8px;
+  background: #f6fafd;
+  border: 1px solid #c6daf2;
+  border-radius: 6px;
+  color: #1c2e4a;
+  transition: border .15s;
+}
+.admin-table input:focus {
+  border-color: var(--cor-accent);
+  outline: none;
+  background: #fff;
+}
+.editando td {
+  background: #f8fafc !important;
+}
+
+/* ------ ICON BUTTONS (EDIT/DEL/SAVE) ------ */
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.23rem;
+  padding: 4px 9px;
+  margin: 0 1px;
+  color: var(--cor-secondary);
+  border-radius: 8px;
+  transition: color .14s, background .13s;
+}
+.icon-btn.edit:hover {
+  background: #e8f3ff;
+  color: #2683ef;
+}
+.icon-btn.del {
+  color: #cb4848;
+}
+.icon-btn.del:hover {
+  background: #fff1f1;
+  color: #b11414;
+}
+.icon-btn.save {
+  color: #0a7c51;
+}
+.icon-btn.save:hover {
+  background: #e6f9f2;
+  color: #12703f;
+}
+.icon-btn.cancel {
+  color: #85909f;
+}
+.icon-btn.cancel:hover {
+  background: #f5f5f5;
+  color: #444;
+}
+
+/* ------ PAGINAÇÃO ------ */
+.paginacao {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 11px;
+  margin-top: 20px;
+}
+.paginacao-btn {
+  background: #dbe9fb;
+  color: var(--cor-accent);
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 18px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  transition: background .15s, color .15s;
+  margin: 0 2px;
+}
+.paginacao-btn:disabled {
+  background: #f3f6fa;
+  color: #a3bdd8;
+  cursor: not-allowed;
+}
+.paginacao-num {
+  background: none;
+  color: var(--cor-primary);
+  border: none;
+  font-size: 16.5px;
+  font-weight: 600;
+  margin: 0 1px;
+  width: 27px;
+  height: 27px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background .15s, color .15s;
+}
+.paginacao-num.ativo,
+.paginacao-num:hover {
+  background: #e7f2fd;
+  color: #246fca;
+}
+
+/* ------ SCROLLBARS E RESPONSIVO ------ */
+.admin-table {
+  overflow-x: auto;
+}
+@media (max-width: 950px) {
+  .admin-content { width: 99vw; }
+  .admin-main { padding-left:8px; padding-right:8px;}
+  .admin-section-card { padding: 18px 6vw; }
+  .card-header { font-size: 1.09rem; }
+}
+
+@media (max-width: 700px) {
+  .admin-sidebar {
+    display: none;
+  }
+  .admin-main {
+    margin-left: 0;
+    padding: 12px 3vw 28px 3vw !important;
+  }
+}
+@media (max-width: 600px) {
+  .admin-table th, .admin-table td { padding: 10px 1.5vw; font-size: 15px;}
+  .admin-section-card { padding: 11px 2vw 10px 2vw;}
+  .card-header { font-size: 1.02rem; }
+  .paginacao { margin-top: 10px; }
+}
