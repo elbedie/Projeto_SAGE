@@ -103,7 +103,9 @@ Como gestor hospitalar, quero ver um painel de controle com status dos equipamen
 **Time Stamp:** 00:28-01:23 
 
 **Implementação no site:**
-![image](https://github.com/user-attachments/assets/d79fd30f-8833-409c-935a-fb6d61b6a801)
+![Captura de tela 2025-06-03 175530](https://github.com/user-attachments/assets/8de39b83-cc7a-4ba8-af22-6d1eaa394132)
+![Captura de tela 2025-06-03 175605](https://github.com/user-attachments/assets/fbb1c4a8-8d7c-42fc-80ff-cec5edcffa5b)
+![Captura de tela 2025-06-03 175638](https://github.com/user-attachments/assets/ae6f0eda-5b56-42aa-83e1-93bc0c6ec72d)
 
 
 ---
@@ -124,6 +126,9 @@ Como técnico de manutenção, quero consultar um equipamento pelo código ou no
 - Listar histórico completo de manutenções.
 
 **Time Stamp:** 01:15-01:22 
+
+**Implementação no site:**
+![image](https://github.com/user-attachments/assets/4fe66c1a-cf25-4fd0-9532-145c2abb5e39)
 
 ---
 
@@ -152,8 +157,8 @@ Como técnico de manutenção, quero abrir uma O.S. rapidamente, para garantir q
 **Time Stamp:** 01:24-01:55
 
 **Implementação no site:**
-![PRINT abrir o s 1](https://github.com/user-attachments/assets/9c68a33b-b77b-4bf8-b63e-8c8e80791d5b)
-![PRINT O S 2](https://github.com/user-attachments/assets/fa2f6a86-0cf6-441d-98ac-d6cfb1a20b69)
+![image](https://github.com/user-attachments/assets/7fe4b4ad-3403-4b20-bc17-f3c814719dcb)
+![image](https://github.com/user-attachments/assets/90b5f998-1aed-479e-93a2-4e9ad8e574b7)
 
 
 ---
@@ -182,8 +187,8 @@ Como técnico de manutenção, quero registrar detalhes da O.S. ao encerrá-la, 
 **Time Stamp:** 01:55-03:08 
 
 **Implementação no site:**
-![print fechar os 1](https://github.com/user-attachments/assets/892b3701-04d1-45f3-8710-ed87cf717228)
-![print fechar os 2](https://github.com/user-attachments/assets/25825f7a-c4f0-4d47-9ba8-e2930d74c99d)
+![image](https://github.com/user-attachments/assets/a0296876-dc16-46b6-ae8a-eaa33cd01228)
+![image](https://github.com/user-attachments/assets/fc0b3a2d-5a99-4d74-a494-9da0b29f2903)
 
 ---
 
@@ -208,6 +213,11 @@ Como gestor hospitalar, quero monitorar contratos com fornecedores, para garanti
 **Implementação no protótipo:**
 ![image](https://github.com/user-attachments/assets/c66db552-bb0a-4b94-af8e-4729e3b53d7b)
 
+**Implementação no site:**
+![image](https://github.com/user-attachments/assets/30abd462-add7-421e-98ca-5d2f27726108)
+![image](https://github.com/user-attachments/assets/9dc7e546-973a-4b4a-ae57-1309557caae5)
+
+
 ---
 
 - ### 7. **Alertas Automáticos de Manutenção**  
@@ -225,7 +235,11 @@ Como administrador da clínica, quero receber alertas sobre manutenções progra
 - Notificações sobre falhas recorrentes.
 - Opção de configurar preferências para receber alertas.
   
-**Time Stamp:**  01:46-01:56 
+**Time Stamp:**  01:46-01:56
+
+**Implementação no site:**
+![image](https://github.com/user-attachments/assets/30bcbbdd-0f0a-4b1c-bbd6-5530381afe9d)
+
 
 ---
 
@@ -245,6 +259,10 @@ Como gestor hospitalar ou administrador, quero gerar relatórios sobre status do
 - Possibilidade de exportação em PDF e Excel.
 
 **Time Stamp:**  01:56-02:04
+
+**Implementação no site:**
+![image](https://github.com/user-attachments/assets/08e4ce85-8f88-4bb4-8f2f-f8ab49ec3501)
+
 
 ---
 
@@ -279,14 +297,18 @@ Como administrador da clínica, quero cadastrar novos equipamentos no sistema, p
 
 **Critérios de Aceitação:**
 - Permitir cadastro de novos equipamentos com detalhes técnicos.
-- Classificar equipamentos por tipo, localização e criticidade.
+- Classificar equipamentos por tipo, localização e marca.
 - Vincular equipamentos a contratos de manutenção.
 
 **Time Stamp:**   02:13-02:22
 
+**Implementação no site:**
+![image](https://github.com/user-attachments/assets/4c91e1f3-847a-402b-a699-545eb537cbf3)
+
+
 ---
 
-- ### 11. **Painel de Prioridades e Urgências**  
+- ### 11. **Alerta de Atraso em O.S.**  
 **Conversa com o P.O:**  
 **Desenvolvedor:**  
 Você mencionou um painel destacando as O.S. urgentes. Como o sistema deve lidar com mudanças de prioridade? Se, por exemplo, uma O.S. "Média" se tornar urgente, como devemos mostrar isso para os técnicos?  
@@ -302,6 +324,10 @@ Como gestor hospitalar, quero visualizar um painel que prioriza as O.S. mais urg
 - Integrar com alertas automáticos para notificação de emergências.
 
 **Time Stamp:**   02:22-02:29
+
+**Implementação no site:**
+![image](https://github.com/user-attachments/assets/d663cd98-0cc3-45ba-93d4-b506d8e4c7bb)
+
 
 ---
 
