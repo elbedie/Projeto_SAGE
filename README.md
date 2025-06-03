@@ -441,62 +441,93 @@ Assista ao vídeo do protótipo para ver como o sistema funciona e entender como
 Acesse o nosso diagrama de atividade do Projeto SAGE através deste [link](https://www.canva.com/design/DAGl3NLtZCU/LMaEQjuhNSR8kIqoEzb_eQ/edit).
 
 ![image](https://github.com/user-attachments/assets/3d72fe5d-e5f4-4e7b-b939-8d0d95f5f594)
+![image](https://github.com/user-attachments/assets/70da10b8-d124-4968-8569-c7d345167118)
+![image](https://github.com/user-attachments/assets/6d402aff-1602-43cb-95f6-3e87a7a4e65c)
 
-## Relatório de Programação em Pares
 
-### Funcionalidades Implementadas:
+
+## 📋 Relatório de Programação em Pares
+
+### ✅ Funcionalidades Implementadas
+
 - **Autenticação com login (e-mail/senha)**
-- **Visualização de Dashboard (engenheiro Clínico)**
+- **Visualização de Dashboard** (engenheiro clínico, auxiliar administrativo e agente externo)
 - **Abertura de Ordem de Serviço (O.S.)**
 - **Fechamento de O.S.**
-  
+- **Cadastro e Controle de Contratos**
+- **Alertas de Vencimento de Contratos**
+- **Alertas de Atraso em O.S.**
+- **Cadastro e Classificação de Equipamentos**
+- **Inventário de Equipamentos**
+- **Melhorias de UI/UX**
+
+---
 
 ### 🎯 Objetivo da Programação em Pares
 
-A **Programação em Pares** (ou **Pair Programming**) é uma prática ágil onde duas pessoas trabalham juntas na mesma tarefa, com foco em colaboração contínua, revisão em tempo real e melhoria da qualidade do código. Um parceiro atua como o "piloto" (codifica) e o outro como o "navegador" (revisa, dá ideias e antecipa problemas).
+A **Programação em Pares** (ou *Pair Programming*) é uma técnica de desenvolvimento ágil em que duas pessoas trabalham juntas na mesma tarefa, promovendo:
 
-Em nosso projeto **React**, essa abordagem foi usada para:
+- Colaboração contínua
+- Revisão imediata do código
+- Melhoria na qualidade técnica e organizacional
 
-- Garantia de boas práticas em **React**, como separação de responsabilidades e reaproveitamento de componentes.
-- Detecção imediata de bugs ou comportamentos inesperados.
+No projeto desenvolvido com **React**, essa abordagem foi utilizada para:
 
+- Aplicar boas práticas como separação de responsabilidades e componentes reutilizáveis
+- Reduzir bugs e inconsistências de fluxo
+- Garantir decisões técnicas mais sólidas e embasadas
 
+---
 
-### ⚙️ Como Aplicamos no Projeto
+### ⚙️ Aplicação da Programação em Pares
 
-| **Funcionalidade**               | **Foco da Programação em Pares**                                                                                                                                  |
-|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Login com e-mail/senha**        | Definição de fluxos de navegação com **React Router**. Validação de formulário e UX. O navegador verificou o cumprimento dos requisitos de validação.              |
-| **Dashboard do Engenheiro**       | Construção de layout com componentes reutilizáveis. Implementação de filtros e cards. O navegador deu sugestão de mudanças para melhorar a interface.               |
-| **Abertura de O.S.**              | Criação de formulários com gerenciamento de estado local e uso de componentes controlados. O navegador sugeriu melhorias no fluxo, evitando confusão.              |
-| **Fechamento de O.S.**            | Implementação de múltiplos campos (peças, tempo, descrição). Otimização de reatividade. O navegador sugeriu melhorias visuais e de campos essenciais.               |
+| **Funcionalidade**                     | **Foco da Programação em Pares**                                                                                                                              |
+|----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Login com e-mail/senha**             | Definição de rotas com `React Router`, validação de formulários, e revisão de UX para autenticação segura.                                                    |
+| **Dashboard do Engenheiro**            | Uso de componentes reutilizáveis, filtros dinâmicos e cards informativos. O navegador sugeriu melhorias na organização visual.                               |
+| **Abertura de O.S.**                   | Formulários com estados controlados, clareza no fluxo e regras de preenchimento. Sugestões de usabilidade aplicadas em tempo real.                           |
+| **Fechamento de O.S.**                 | Campos múltiplos (peças, tempo, descrição), validação e melhorias visuais para facilitar o preenchimento.                                                     |
+| **Cadastro de Contratos**              | Integração com backend e validações. Navegador contribuiu com lógica de consistência e clareza no preenchimento.                                              |
+| **Alertas de Vencimento de Contratos** | Notificações baseadas em datas e regras de negócio. O navegador acompanhou testes e ajustou mensagens para melhor compreensão.                               |
+| **Alertas de Atraso em O.S.**          | Regras para detectar ordens fora do prazo, exibindo alertas visuais. Testes conduzidos em conjunto para evitar falsos positivos.                            |
+| **Cadastro e Classificação de Equipamentos** | Estrutura de categorias, atributos técnicos e filtros. A arquitetura foi definida e validada em dupla.                                                  |
+| **Inventário de Equipamentos**         | Visualização consolidada com filtros por tipo/status. Discussões técnicas sobre hierarquia de dados e UX aplicadas no momento do desenvolvimento.            |
+| **Melhorias de UI/UX**                 | Padrões visuais, responsividade e feedbacks foram revisados em tempo real durante sessões de pareamento.                                                    |
 
-
+---
 
 ### ✅ Benefícios Observados
 
-- **Melhoria na qualidade do código**: erros foram detectados e corrigidos durante o desenvolvimento.
-- **Aprendizado mútuo**: compartilhamos conhecimento técnico sobre autenticação, manipulação de estados no front-end e regras de negócio.
-- **Redução de retrabalho**: decisões foram tomadas em conjunto, evitando mal-entendidos de requisitos.
-- **Alinhamento com o backlog do cliente**: foco constante no que era prioritário, com base no que foi definido.
+- **Código mais limpo e seguro**: validações e revisões contínuas reduziram bugs.
+- **Aprendizado técnico mútuo**: ambas as partes evoluíram em React, hooks, gerenciamento de estado e boas práticas de design.
+- **Menos retrabalho**: decisões e ajustes foram feitos em tempo real, reduzindo erros de interpretação de requisitos.
+- **Foco no backlog**: o pareamento ajudou a manter a entrega alinhada com o que era mais importante para o cliente.
 
-
+---
 
 ### 🚧 Desafios Enfrentados
 
-- **Sincronização de horários**: foi necessário ajustar as agendas para garantir que os pares pudessem trabalhar juntos.
-- **Cansaço mental**: sessões prolongadas exigem pausas regulares para manter a produtividade e concentração.
+- **Sincronização de agendas**: ajustes foram necessários para garantir tempo conjunto de qualidade.
+- **Fadiga mental**: sessões prolongadas exigiram pausas e planejamento para manter a produtividade.
+- **Consenso técnico**: algumas decisões exigiram debates para alinhar expectativas e escolhas arquiteturais.
 
-
+---
 
 ### 📈 Considerações Finais
 
-A prática de **programação em pares** foi essencial para garantir a entrega de funcionalidades com qualidade e de acordo com o que foi priorizado pelo cliente. A combinação de revisão constante, troca de conhecimentos e tomada de decisão conjunta fortaleceu o desenvolvimento colaborativo e alinhado aos objetivos do projeto.
+A prática da **programação em pares** foi essencial para a entrega eficiente, segura e alinhada aos objetivos do projeto. A técnica garantiu:
+
+- Maior colaboração
+- Redução de erros
+- Melhor entendimento do domínio do cliente
+
+Com a expansão do escopo para **contratos, alertas e controle de equipamentos**, o pareamento continuou sendo fundamental para manter qualidade, desempenho e usabilidade em todas as entregas.
+
 
 ![image](https://github.com/user-attachments/assets/c8aba428-507a-42d6-bff1-dc2b8aef72ad)
 ![image](https://github.com/user-attachments/assets/6990909c-8381-4490-8442-0f588cf80e02)
 
-### Bug Tracker
+## Bug Tracker
 
 **1. Erro na Rota de Abrir OS:**
 ![erro404](https://github.com/user-attachments/assets/3d8be60a-eb0f-4667-afec-cb6b375caf0c)
