@@ -606,6 +606,20 @@ Com a expansão do escopo para **contratos, alertas e controle de equipamentos**
 - Causa: Identificamos que o erro estava sendo causado por uma importação malformada em um dos arquivos .js. O caminho informado não havia sido definido no arquivo de rotas. 
 - Solução: Foi feita uma revisão nas declarações de import e o caminho do arquivo foi corrigido para refletir a nova estrutura de diretórios. Após o ajuste, o projeto compilou normalmente sem erros.
 
+**3. Problema com Assets Estáticos Não Carregando**
+- Descrição: Imagens e arquivos estáticos armazenados na pasta public não estavam sendo exibidos corretamente após o build em produção.
+- Causa: As referências aos assets usavam caminhos relativos, como ./img/logo.png, o que funcionava em desenvolvimento mas falhava no build do Vite, pois as URLs eram resolvidas de modo diferente.
+- Solução: Substituímos os caminhos relativos por absolutos baseados na pasta /public, como /logo.png, e revisamos a documentação do Vite sobre assets estáticos para garantir compatibilidade.
+
+**4. Inclusão Incorreta do CSS com Import Absoluto**
+- Descrição: O site não carregava os estilos personalizados após o build, aparecendo sem formatação, embora o CSS estivesse correto em ambiente local.
+- Causa: O arquivo CSS foi importado utilizando o caminho absoluto do sistema (C:/projeto/src/styles.css), o que só funciona localmente. Em produção, resultava em erro de importação.
+- Solução: Corrigimos a importação para ser relativa ao projeto: import './styles.css';, garantindo que o Vite resolvesse corretamente o caminho nos builds para produção e desenvolvimento.
+
+**5. Formulários Não Resetam Após Envio**
+- Descrição: Após envio de dados em um formulário, os campos permaneciam preenchidos, levando o usuário a acreditar que não havia enviado corretamente.
+- Causa: Esquecemos de resetar o estado dos campos controlados no método de submit.
+- Solução: Ao final da função de envio, adicionamos comandos para setar os estados dos campos de volta ao valor inicial, limpando o formulário automaticamente após submissão.
 
 ---
 
