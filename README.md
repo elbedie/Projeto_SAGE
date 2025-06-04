@@ -45,10 +45,13 @@ Utilizamos a metodologia MoSCoW para priorizar as funcionalidades de **SAGE**, g
 - 🌐 **Integração com Sistemas Externos de Gestão Hospitalar**  
 - 🤖 **Inteligência Artificial para Previsão de Falhas**  
 
-## 🧑‍💻 Histórias de Usuário 
-[Screencast](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view), [Link do Site](https://projeto-sage-pearl.vercel.app/), [Screencast do Site](https://drive.google.com/file/d/1nTCamR7R80cCrwoSBWqHsUmMBSnFT2WJ/view?usp=sharing)
+## 🧑‍💻 Histórias de Usuário
 
-- ### 1. **Autenticação e Definição de Perfil**  
+[Screencast](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view) • [Link do Site](https://projeto-sage-pearl.vercel.app/) • [Screencast do Site](https://drive.google.com/file/d/1nTCamR7R80cCrwoSBWqHsUmMBSnFT2WJ/view?usp=sharing)
+
+<details>
+<summary><strong>1. Autenticação e Definição de Perfil</strong></summary>
+
 **Conversa com o P.O:**  
 **Desenvolvedor:**  
 Oi, PO! Para a história "Autenticação e Definição de Perfil", temos um requisito claro de login e senha. Para a recuperação de senha, qual fluxo você imagina? O usuário vai receber um link por e-mail para resetar a senha ou ele vai responder a perguntas de segurança?  
@@ -62,22 +65,25 @@ Como usuário do sistema, quero fazer login de forma segura e escolher meu perfi
 - O sistema deve permitir login e senha.
 - Deve haver opção de recuperação de senha.
 - O sistema adapta a interface conforme o perfil do usuário (Gestor, Técnico, Administrador).
-- 
-**Time Stamp:** 00:52-01:06
+
+**Time Stamp:** 00:52-01:06  
 **Figma Time Stamp:** 02:48-03:38
-  
-**Implementação no protótipo:**
+
+**Implementação no protótipo:**  
 ![image](https://github.com/user-attachments/assets/97d60a62-5d38-4bce-9f1c-30e13ffabd94)
 
 **Time Stamp Site:** 00:00-00:30
 
-**Implementação no site:**
+**Implementação no site:**  
 ![image](https://github.com/user-attachments/assets/bdb0cadc-7da3-4914-855a-87686af44a48)
 
+</details>
 
 ---
 
-- ### 2. **Visualização de Dashboard**  
+<details>
+<summary><strong>2. Visualização de Dashboard</strong></summary>
+
 **Conversa com o P.O:**  
 **Desenvolvedor:**  
 PO, sobre o painel do gestor, o que você imagina quando fala sobre indicadores visuais de criticidade? Você tem algum modelo ou exemplo de visualização?  
@@ -92,25 +98,28 @@ Como gestor hospitalar, quero ver um painel de controle com status dos equipamen
 - Incluir indicadores visuais de criticidade.
 - Permitir filtros por período e tipo de manutenção.
 
-**Time Stamp:** 01:06-01:15 
+**Time Stamp:** 01:06-01:15  
 **Figma Time Stamp:** 03:38-04:16; 04:47-05:50; 06:18-06:48
 
-**Implementação no protótipo:**
+**Implementação no protótipo:**  
 ![image](https://github.com/user-attachments/assets/0d4e5bf6-8137-47f0-94e6-a58c182367e3)
 ![image](https://github.com/user-attachments/assets/363e0d90-8e49-40a6-b8c6-050b4cd0203e)
 ![image](https://github.com/user-attachments/assets/8381bd9f-2dc8-4cbc-94f5-61d5b7d0f2db)
 
-**Time Stamp Site:** 00:30-01:42;  02:20-01:42; 04:18-05:13 
+**Time Stamp Site:** 00:30-01:42; 02:20-01:42; 04:18-05:13
 
-**Implementação no site:**
+**Implementação no site:**  
 ![Captura de tela 2025-06-03 175530](https://github.com/user-attachments/assets/8de39b83-cc7a-4ba8-af22-6d1eaa394132)
 ![Captura de tela 2025-06-03 175605](https://github.com/user-attachments/assets/fbb1c4a8-8d7c-42fc-80ff-cec5edcffa5b)
 ![Captura de tela 2025-06-03 175638](https://github.com/user-attachments/assets/ae6f0eda-5b56-42aa-83e1-93bc0c6ec72d)
 
+</details>
 
 ---
 
-- ### 3. **Consulta de Equipamento**  
+<details>
+<summary><strong>3. Consulta de Equipamento</strong></summary>
+
 **Conversa com o P.O:**  
 **Desenvolvedor:**  
 Para a consulta de equipamentos, a busca pode ser feita pelo nome, código ou categoria, mas em relação ao histórico de manutenção, você quer ver também o que foi feito nos últimos meses ou o histórico completo?  
@@ -125,15 +134,19 @@ Como técnico de manutenção, quero consultar um equipamento pelo código ou no
 - Mostrar status atual do equipamento.
 - Listar histórico completo de manutenções.
 
-**Time Stamp:** 01:15-01:22
+**Time Stamp:** 01:15-01:22  
 **Time Stamp Site:** 03:10-03:24
 
-**Implementação no site:**
+**Implementação no site:**  
 ![image](https://github.com/user-attachments/assets/4fe66c1a-cf25-4fd0-9532-145c2abb5e39)
+
+</details>
 
 ---
 
-- ### 4. **Abertura de Ordem de Serviço (O.S.)**  
+<details>
+<summary><strong>4. Abertura de Ordem de Serviço (O.S.)</strong></summary>
+
 **Conversa com o P.O:**  
 **Desenvolvedor:**  
 Para abrir uma O.S., o técnico deve selecionar o equipamento e relatar o problema. Quando falamos sobre a prioridade, você acha que a opção de "Baixa, Média e Alta" é suficiente ou devemos adicionar alguma outra prioridade, como "Urgente"?  
@@ -149,22 +162,24 @@ Como técnico de manutenção, quero abrir uma O.S. rapidamente, para garantir q
 - Atribuir técnico responsável.
 
 **Time Stamp:**  01:23-01:30  
-**Figma Time Stamp:** 04:16-04:46; 06:48-07:48
-
-**Implementação no protótipo:**
+**Figma Time Stamp:** 04:16-04:46; 06:48-07:48  
+**Implementação no protótipo:**  
 ![image](https://github.com/user-attachments/assets/bc4c5267-3046-4ce4-9c66-3bf91961e82a)
 ![image](https://github.com/user-attachments/assets/544e939c-1ba4-4dcd-ad8a-5984a27a3494)
 
 **Time Stamp Site:**  00:51-01:15
 
-**Implementação no site:**
+**Implementação no site:**  
 ![image](https://github.com/user-attachments/assets/7fe4b4ad-3403-4b20-bc17-f3c814719dcb)
 ![image](https://github.com/user-attachments/assets/90b5f998-1aed-479e-93a2-4e9ad8e574b7)
 
+</details>
 
 ---
 
-- ### 5. **Fechamento de Ordem de Serviço com Relatório**  
+<details>
+<summary><strong>5. Fechamento de Ordem de Serviço com Relatório</strong></summary>
+  
 **Conversa com o P.O:**  
 **Desenvolvedor:**  
 Ao fechar uma O.S., você mencionou que o técnico pode adicionar descrição da manutenção. Devemos também permitir que o técnico adicione fotos do que foi feito ou da peça substituída?  
@@ -179,21 +194,25 @@ Como técnico de manutenção, quero registrar detalhes da O.S. ao encerrá-la, 
 - Registrar peças substituídas e tempo gasto.
 - Gerar relatório automático da intervenção.
 
-**Time Stamp:**  01:30-01:38 
+**Time Stamp:**  01:30-01:38  
 **Figma Time Stamp:** 07:48-08:35
 
-**Implementação no protótipo:**
+**Implementação no protótipo:**  
 ![image](https://github.com/user-attachments/assets/130016b9-d43e-438f-8dd9-d730f8a31b4e)
 
-**Time Stamp Site:** 01:42-02:04 
+**Time Stamp Site:** 01:42-02:04
 
-**Implementação no site:**
+**Implementação no site:**  
 ![image](https://github.com/user-attachments/assets/a0296876-dc16-46b6-ae8a-eaa33cd01228)
 ![image](https://github.com/user-attachments/assets/fc0b3a2d-5a99-4d74-a494-9da0b29f2903)
 
+</details>
+
 ---
 
-- ### 6. **Controle de Contratos**  
+<details>
+<summary><strong>6. Controle de Contratos</strong></summary>
+
 **Conversa com o P.O:**  
 **Desenvolvedor:**  
 Quando falamos sobre monitoramento de contratos, você imagina que o sistema deve enviar alertas para os contratos próximos do vencimento, mas com que antecedência você gostaria desses alertas? Uma semana? 30 dias?  
@@ -211,18 +230,22 @@ Como gestor hospitalar, quero monitorar contratos com fornecedores, para garanti
 **Time Stamp:**  01:38-01:46  
 **Figma Time Stamp:** 02:47-03:10; 05:50-06:17; 5:13-5:58 (Screencast Site)
 
-**Implementação no protótipo:**
+**Implementação no protótipo:**  
 ![image](https://github.com/user-attachments/assets/c66db552-bb0a-4b94-af8e-4729e3b53d7b)
 
 **Time Stamp Site:** 03:32-04:05
-**Implementação no site:**
+
+**Implementação no site:**  
 ![image](https://github.com/user-attachments/assets/30abd462-add7-421e-98ca-5d2f27726108)
 ![image](https://github.com/user-attachments/assets/9dc7e546-973a-4b4a-ae57-1309557caae5)
 
+</details>
 
 ---
 
-- ### 7. **Alertas Automáticos de Manutenção**  
+<details>
+<summary><strong>7. Alertas Automáticos de Manutenção</strong></summary>
+
 **Conversa com o P.O:**  
 **Desenvolvedor:**  
 Em relação aos alertas de manutenção, você gostaria de configurar o tipo de notificação (e-mail, SMS, ou dentro do sistema)? E sobre a falha recorrente, seria interessante que o sistema enviasse uma notificação automaticamente quando detectar o mesmo erro mais de uma vez em um curto período?  
@@ -236,18 +259,20 @@ Como administrador da clínica, quero receber alertas sobre manutenções progra
 - Alertas automáticos para manutenções preventivas.
 - Notificações sobre falhas recorrentes.
 - Opção de configurar preferências para receber alertas.
-  
-**Time Stamp:**  01:46-01:56
 
+**Time Stamp:**  01:46-01:56  
 **Time Stamp Site:** Alertas Automáticos de Manutenção: 02:44-02:47
 
-**Implementação no site:**
+**Implementação no site:**  
 ![image](https://github.com/user-attachments/assets/30bcbbdd-0f0a-4b1c-bbd6-5530381afe9d)
 
+</details>
 
 ---
 
-- ### 8. **Geração de Relatórios Personalizados**  
+<details>
+<summary><strong>8. Geração de Relatórios Personalizados</strong></summary>
+
 **Conversa com o P.O:**  
 **Desenvolvedor:**  
 Na geração de relatórios, além de tempo médio de resposta e custo de manutenção, você gostaria de incluir mais algum indicador específico? Como, por exemplo, o custo total por equipamento ou por tipo de manutenção?  
@@ -262,17 +287,19 @@ Como gestor hospitalar ou administrador, quero gerar relatórios sobre status do
 - Mostrar tempo médio de resposta e custo de manutenção.
 - Possibilidade de exportação em PDF e Excel.
 
-**Time Stamp:**  01:56-02:04
-
+**Time Stamp:**  01:56-02:04  
 **Time Stamp Site:** 02:04-02:20
 
-**Implementação no site:**
+**Implementação no site:**  
 ![image](https://github.com/user-attachments/assets/08e4ce85-8f88-4bb4-8f2f-f8ab49ec3501)
 
+</details>
 
 ---
 
-- ### 9. **Gerenciamento de Estoque de Peças**  
+<details>
+<summary><strong>9. Gerenciamento de Estoque de Peças</strong></summary>
+
 **Conversa com o P.O:**  
 **Desenvolvedor:**  
 Para o gerenciamento de estoque de peças, você gostaria de integrar o sistema com o fornecedor para que a reposição de peças seja feita automaticamente quando o estoque atingir um valor mínimo?  
@@ -289,9 +316,13 @@ Como técnico de manutenção, quero ter controle sobre as peças disponíveis n
 
 **Time Stamp:**   02:04-02:13
 
+</details>
+
 ---
 
-- ### 10. **Cadastro e Classificação de Equipamentos**  
+<details>
+<summary><strong>10. Cadastro e Classificação de Equipamentos</strong></summary>
+
 **Conversa com o P.O:**  
 **Desenvolvedor:**  
 No cadastro de novos equipamentos, você gostaria de incluir alguma informação adicional, como a data de aquisição ou o fabricante? E para a classificação dos equipamentos, deveríamos ter algum campo de "última manutenção"?  
@@ -308,13 +339,16 @@ Como administrador da clínica, quero cadastrar novos equipamentos no sistema, p
 
 **Time Stamp Site:** 03:24-03:32
 
-**Implementação no site:**
+**Implementação no site:**  
 ![image](https://github.com/user-attachments/assets/4c91e1f3-847a-402b-a699-545eb537cbf3)
 
+</details>
 
 ---
 
-- ### 11. **Alerta de Atraso em O.S.**  
+<details>
+<summary><strong>11. Alerta de Atraso em O.S.</strong></summary>
+
 **Conversa com o P.O:**  
 **Desenvolvedor:**  
 Você mencionou um painel destacando as O.S. urgentes. Como o sistema deve lidar com mudanças de prioridade? Se, por exemplo, uma O.S. "Média" se tornar urgente, como devemos mostrar isso para os técnicos?  
@@ -329,17 +363,19 @@ Como gestor hospitalar, quero visualizar um painel que prioriza as O.S. mais urg
 - Permitir reordenação de prioridades em tempo real.
 - Integrar com alertas automáticos para notificação de emergências.
 
-**Time Stamp:**   02:22-02:29
-
+**Time Stamp:**   02:22-02:29  
 **Time Stamp Site:** 01:27-01:42
 
-**Implementação no site:**
+**Implementação no site:**  
 ![image](https://github.com/user-attachments/assets/d663cd98-0cc3-45ba-93d4-b506d8e4c7bb)
 
+</details>
 
 ---
 
-- ### 12. **Histórico de Intervenções Técnicas**  
+<details>
+<summary><strong>12. Histórico de Intervenções Técnicas</strong></summary>
+
 **Conversa com o P.O:**  
 **Desenvolvedor:**  
 Quando falamos sobre o histórico de intervenções, você imagina que ele deve incluir apenas as manutenções ou também detalhes sobre as falhas encontradas durante a inspeção?  
@@ -355,6 +391,8 @@ Como técnico de manutenção, quero acessar um histórico detalhado de todas as
 - Gerar insights sobre padrões de falha recorrentes.
 
 **Time Stamp:**   02:29-02:37
+
+</details>
 
 ## 🎨 Prototipagem e Design  
 Para uma visão mais imersiva do projeto, confira nossos protótipos e veja como **SAGE** vai revolucionar a gestão de equipamentos hospitalares:
