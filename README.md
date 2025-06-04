@@ -315,6 +315,8 @@ Como técnico de manutenção, quero ter controle sobre as peças disponíveis n
 - Registrar histórico de uso de peças em manutenções.
 
 **Time Stamp:**   02:04-02:13
+**Implementação no site:**  
+![image](https://github.com/user-attachments/assets/a68e8abb-e823-41be-9c79-d0afc0844a94)
 
 </details>
 
@@ -372,27 +374,6 @@ Como gestor hospitalar, quero visualizar um painel que prioriza as O.S. mais urg
 </details>
 
 ---
-
-<details>
-<summary><strong>12. Histórico de Intervenções Técnicas</strong></summary>
-
-**Conversa com o P.O:**  
-**Desenvolvedor:**  
-Quando falamos sobre o histórico de intervenções, você imagina que ele deve incluir apenas as manutenções ou também detalhes sobre as falhas encontradas durante a inspeção?  
-**Product Owner:**  
-O histórico deve incluir tanto as manutenções realizadas quanto as falhas encontradas. Seria bom também que, ao clicar em uma intervenção, o técnico possa ver informações detalhadas sobre o problema identificado.
-
-**História do Usuário:**  
-Como técnico de manutenção, quero acessar um histórico detalhado de todas as intervenções já realizadas em um equipamento, para analisar padrões e prever falhas futuras.
-
-**Critérios de Aceitação:**
-- Exibir histórico cronológico das intervenções técnicas.
-- Permitir filtros por tipo de falha ou componente trocado.
-- Gerar insights sobre padrões de falha recorrentes.
-
-**Time Stamp:**   02:29-02:37
-
-</details>
 
 ## 🎨 Prototipagem e Design  
 Para uma visão mais imersiva do projeto, confira nossos protótipos e veja como **SAGE** vai revolucionar a gestão de equipamentos hospitalares:
