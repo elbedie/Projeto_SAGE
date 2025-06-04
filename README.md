@@ -46,7 +46,7 @@ Utilizamos a metodologia MoSCoW para priorizar as funcionalidades de **SAGE**, g
 - 🤖 **Inteligência Artificial para Previsão de Falhas**  
 
 ## 🧑‍💻 Histórias de Usuário 
-[Screencast](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view), [Link do Site](https://projeto-sage-pearl.vercel.app/), [Screencast do Site](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view?usp=drive_link)
+[Screencast](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view), [Link do Site](https://projeto-sage-pearl.vercel.app/), [Screencast do Site](https://drive.google.com/file/d/1nTCamR7R80cCrwoSBWqHsUmMBSnFT2WJ/view?usp=sharing)
 
 - ### 1. **Autenticação e Definição de Perfil**  
 **Conversa com o P.O:**  
@@ -69,7 +69,7 @@ Como usuário do sistema, quero fazer login de forma segura e escolher meu perfi
 **Implementação no protótipo:**
 ![image](https://github.com/user-attachments/assets/97d60a62-5d38-4bce-9f1c-30e13ffabd94)
 
-**Time Stamp:** 00:00-00:28
+**Time Stamp Site:** 00:00-00:30
 
 **Implementação no site:**
 ![image](https://github.com/user-attachments/assets/bdb0cadc-7da3-4914-855a-87686af44a48)
@@ -100,7 +100,7 @@ Como gestor hospitalar, quero ver um painel de controle com status dos equipamen
 ![image](https://github.com/user-attachments/assets/363e0d90-8e49-40a6-b8c6-050b4cd0203e)
 ![image](https://github.com/user-attachments/assets/8381bd9f-2dc8-4cbc-94f5-61d5b7d0f2db)
 
-**Time Stamp:** 00:28-01:23 
+**Time Stamp Site:** 00:30-01:42;  02:20-01:42; 04:18-05:13 
 
 **Implementação no site:**
 ![Captura de tela 2025-06-03 175530](https://github.com/user-attachments/assets/8de39b83-cc7a-4ba8-af22-6d1eaa394132)
@@ -125,7 +125,8 @@ Como técnico de manutenção, quero consultar um equipamento pelo código ou no
 - Mostrar status atual do equipamento.
 - Listar histórico completo de manutenções.
 
-**Time Stamp:** 01:15-01:22 
+**Time Stamp:** 01:15-01:22
+**Time Stamp Site:** 03:10-03:24
 
 **Implementação no site:**
 ![image](https://github.com/user-attachments/assets/4fe66c1a-cf25-4fd0-9532-145c2abb5e39)
@@ -154,7 +155,7 @@ Como técnico de manutenção, quero abrir uma O.S. rapidamente, para garantir q
 ![image](https://github.com/user-attachments/assets/bc4c5267-3046-4ce4-9c66-3bf91961e82a)
 ![image](https://github.com/user-attachments/assets/544e939c-1ba4-4dcd-ad8a-5984a27a3494)
 
-**Time Stamp:** 01:24-01:55
+**Time Stamp Site:**  00:51-01:15
 
 **Implementação no site:**
 ![image](https://github.com/user-attachments/assets/7fe4b4ad-3403-4b20-bc17-f3c814719dcb)
@@ -184,7 +185,7 @@ Como técnico de manutenção, quero registrar detalhes da O.S. ao encerrá-la, 
 **Implementação no protótipo:**
 ![image](https://github.com/user-attachments/assets/130016b9-d43e-438f-8dd9-d730f8a31b4e)
 
-**Time Stamp:** 01:55-03:08 
+**Time Stamp Site:** 01:42-02:04 
 
 **Implementação no site:**
 ![image](https://github.com/user-attachments/assets/a0296876-dc16-46b6-ae8a-eaa33cd01228)
@@ -208,11 +209,12 @@ Como gestor hospitalar, quero monitorar contratos com fornecedores, para garanti
 - Anexar documentos contratuais.
 
 **Time Stamp:**  01:38-01:46  
-**Figma Time Stamp:** 05:50-06:17
+**Figma Time Stamp:** 02:47-03:10; 05:50-06:17; 5:13-5:58 (Screencast Site)
 
 **Implementação no protótipo:**
 ![image](https://github.com/user-attachments/assets/c66db552-bb0a-4b94-af8e-4729e3b53d7b)
 
+**Time Stamp Site:** 03:32-04:05
 **Implementação no site:**
 ![image](https://github.com/user-attachments/assets/30abd462-add7-421e-98ca-5d2f27726108)
 ![image](https://github.com/user-attachments/assets/9dc7e546-973a-4b4a-ae57-1309557caae5)
@@ -237,6 +239,8 @@ Como administrador da clínica, quero receber alertas sobre manutenções progra
   
 **Time Stamp:**  01:46-01:56
 
+**Time Stamp Site:** Alertas Automáticos de Manutenção: 02:44-02:47
+
 **Implementação no site:**
 ![image](https://github.com/user-attachments/assets/30bcbbdd-0f0a-4b1c-bbd6-5530381afe9d)
 
@@ -259,6 +263,8 @@ Como gestor hospitalar ou administrador, quero gerar relatórios sobre status do
 - Possibilidade de exportação em PDF e Excel.
 
 **Time Stamp:**  01:56-02:04
+
+**Time Stamp Site:** 02:04-02:20
 
 **Implementação no site:**
 ![image](https://github.com/user-attachments/assets/08e4ce85-8f88-4bb4-8f2f-f8ab49ec3501)
@@ -300,7 +306,7 @@ Como administrador da clínica, quero cadastrar novos equipamentos no sistema, p
 - Classificar equipamentos por tipo, localização e marca.
 - Vincular equipamentos a contratos de manutenção.
 
-**Time Stamp:**   02:13-02:22
+**Time Stamp Site:** 03:24-03:32
 
 **Implementação no site:**
 ![image](https://github.com/user-attachments/assets/4c91e1f3-847a-402b-a699-545eb537cbf3)
@@ -324,6 +330,8 @@ Como gestor hospitalar, quero visualizar um painel que prioriza as O.S. mais urg
 - Integrar com alertas automáticos para notificação de emergências.
 
 **Time Stamp:**   02:22-02:29
+
+**Time Stamp Site:** 01:27-01:42
 
 **Implementação no site:**
 ![image](https://github.com/user-attachments/assets/d663cd98-0cc3-45ba-93d4-b506d8e4c7bb)
@@ -352,7 +360,7 @@ Como técnico de manutenção, quero acessar um histórico detalhado de todas as
 Para uma visão mais imersiva do projeto, confira nossos protótipos e veja como **SAGE** vai revolucionar a gestão de equipamentos hospitalares:
 
 - **Protótipos Lo-Fi** disponíveis no [Figma](https://www.figma.com/proto/fNpzjR1EqV8dfAkAnqauC4/SAGE?node-id=16-283&p=f&t=MnvjLIMUqd6eujuW-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1)
-- **Screencast** para explicar e visualizar o protótipo em desenvolvimento [Link do Screencast](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view), [Screencast do Site](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view?usp=drive_link)
+- **Screencast** para explicar e visualizar o protótipo em desenvolvimento [Link do Screencast](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view), [Screencast do Site](https://drive.google.com/file/d/1nTCamR7R80cCrwoSBWqHsUmMBSnFT2WJ/view?usp=sharing)
 - **Implementação** para visualizar as funcionalidades implementadas. Instruções de acesso: Clique no link, realize o login e explore o sistema! [Link do Site](https://projeto-sage-pearl.vercel.app/fechar-os/ma4etlgiukpoi)
   # Instruções para Acessar o Site
 
@@ -395,12 +403,15 @@ Acompanhe nosso progresso diretamente nas ferramentas de gestão de projetos:
 - **Quadro e Backlog (Trello)**  
   - **Sprint 1**:
   ![sprint 1](https://github.com/user-attachments/assets/2a748d86-6a82-4d64-989b-53a576fe3ef8)
-- **Sprint 2 e 3**:
+- **Sprints 2 e 3**:
   ![sprint 2](https://github.com/user-attachments/assets/1bc1c86d-0896-4bbe-a784-ce63bc10679a)
+  - **Sprints 4, 5 e 6**:
+  ![image](https://github.com/user-attachments/assets/e832b5d5-150e-44c4-af57-f48125c1905c)
+
 
 
 ## 📚 Sketches e Storyboards  
-Acompanhe o desenvolvimento do projeto com os sketches e storyboards das funcionalidades em andamento: [Figma](https://www.figma.com/proto/fNpzjR1EqV8dfAkAnqauC4/SAGE?node-id=16-283&p=f&t=MnvjLIMUqd6eujuW-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1), [Link do Screencast](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view), [Link do Site](https://projeto-sage-pearl.vercel.app/fechar-os/ma4etlgiukpoi), [Screencast do Site](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view?usp=drive_link)
+Acompanhe o desenvolvimento do projeto com os sketches e storyboards das funcionalidades em andamento: [Figma](https://www.figma.com/proto/fNpzjR1EqV8dfAkAnqauC4/SAGE?node-id=16-283&p=f&t=MnvjLIMUqd6eujuW-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1), [Link do Screencast](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view), [Link do Site](https://projeto-sage-pearl.vercel.app/fechar-os/ma4etlgiukpoi), [Screencast do Site](https://drive.google.com/file/d/1nTCamR7R80cCrwoSBWqHsUmMBSnFT2WJ/view?usp=sharing)
   
 - **História 1**: Autenticação e Definição de Perfil (MINUTAGEM: 00:52-01:06; 02:48-03:38)  
 - **História 2**: Visualização de Dashboard (MINUTAGEM: 01:06-01:15; 03:38-04:16; 04:47-05:50; 06:18-06:48)  
@@ -416,19 +427,31 @@ Acompanhe o desenvolvimento do projeto com os sketches e storyboards das funcion
 - **HU 5 (Fechamento de Ordem de Serviço com Relatório)**: 07:48-08:35  
 - **HU 6 (Controle de Contratos)**: 05:50-06:17
 
-**Protótipo do Site**
+**Screencast Site Final**
 
-- **Login (Autenticação e Definição de Perfil):  00:00-00:28**
-- **Dashboard Eng Clínico (Visualização de Dashboard): 00:28-01:23**
-- **Abrir O.S (Abertura de Ordem de Serviço (O.S.)):  01:24-01:55**
-- **Fechar O.S (Fechamento de Ordem de Serviço com Relatório): 01:55-03:08**
+- **Login (Autenticação e Definição de Perfil):** 00:00-00:30
+- **Dashboard Eng Clínico (Visualização de Dashboard):** 00:30-01:42
+- **Abrir O.S (Abertura de Ordem de Serviço (O.S.)):** 00:51-01:15
+- **Alerta de Atraso em O.S.:** 01:27-01:42
+- **Fechar O.S (Fechamento de Ordem de Serviço com Relatório):** 01:42-02:04
+- **Geração de Relatórios Personalizados:** 02:04-02:20
+- **Dashboard Aux Administrativo (Visualização de Dashboard):** 02:20-01:42
+- **Alerta de Vencimento de Contratos:** 02:40-02:44
+- **Alertas Automáticos de Manutenção:** 02:44-02:47
+- **Cadastro de Contratos:** 02:47-03:10
+- **Consulta de Equipamentos (Inventário):** 03:10-03:24
+- **Cadastro e Classificação de Equipamentos:** 03:24-03:32
+- **Controle de Contratos:** 03:32-04:05
+- **Serviços Agendados:** 04:05-04:18
+- **Dashboard Agente Externo (Visualização de Dashboard):** 04:18-05:13
+- **FIGMA - HU 6 (Tela Inventário):** 05:13-05:58
 
 
 ## 🎥 Screencasts 
 Assista ao vídeo do protótipo para ver como o sistema funciona e entender como ele pode beneficiar a gestão de equipamentos hospitalares:
 
 - [Screencast do Protótipo](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view)
-- [Screencast do Site](https://drive.google.com/file/d/1slR2k941rDWS85niRgqrt9ieG7XNEMER/view?usp=drive_link)
+- [Screencast do Site](https://drive.google.com/file/d/1nTCamR7R80cCrwoSBWqHsUmMBSnFT2WJ/view?usp=sharing)
 
 ### 1. TIME STAMP
 
@@ -455,12 +478,24 @@ Assista ao vídeo do protótipo para ver como o sistema funciona e entender como
 - **HU 5 (Fechamento de Ordem de Serviço com Relatório)**: 07:48-08:35  
 - **HU 6 (Controle de Contratos)**: 05:50-06:17
 
-**Protótipo do Site**
+**Screencast Site Final**
 
-- **Login (Autenticação e Definição de Perfil):  00:00-00:28**
-- **Dashboard Eng Clínico (Visualização de Dashboard): 00:28-01:23**
-- **Abrir O.S (Abertura de Ordem de Serviço (O.S.)):  01:24-01:55**
-- **Fechar O.S (Fechamento de Ordem de Serviço com Relatório): 01:55-03:08**
+- **Login (Autenticação e Definição de Perfil):** 00:00-00:30
+- **Dashboard Eng Clínico (Visualização de Dashboard):** 00:30-01:42
+- **Abrir O.S (Abertura de Ordem de Serviço (O.S.)):** 00:51-01:15
+- **Alerta de Atraso em O.S.:** 01:27-01:42
+- **Fechar O.S (Fechamento de Ordem de Serviço com Relatório):** 01:42-02:04
+- **Geração de Relatórios Personalizados:** 02:04-02:20
+- **Dashboard Aux Administrativo (Visualização de Dashboard):** 02:20-01:42
+- **Alerta de Vencimento de Contratos:** 02:40-02:44
+- **Alertas Automáticos de Manutenção:** 02:44-02:47
+- **Cadastro de Contratos:** 02:47-03:10
+- **Consulta de Equipamentos (Inventário):** 03:10-03:24
+- **Cadastro e Classificação de Equipamentos:** 03:24-03:32
+- **Controle de Contratos:** 03:32-04:05
+- **Serviços Agendados:** 04:05-04:18
+- **Dashboard Agente Externo (Visualização de Dashboard):** 04:18-05:13
+- **FIGMA - HU 6 (Tela Inventário):** 05:13-05:58
 
 ## Diagrama de Atividades
 
